@@ -208,10 +208,10 @@ h2 {
 
 
 
-
-
 img {
   max-width: 100%;
+  vertical-align: sub;
+  height: auto;
 }
 
 /* global end********************************************************/
@@ -291,6 +291,7 @@ img {
   padding-right: 46px;
 }
 
+
 .header-container-navigation-list-item-link-text {
   font-family: 'Muller';
   font-style: normal;
@@ -320,6 +321,7 @@ img {
   gap: 10px;
   border: 1px solid #CC9933;
   border-radius: 10px;
+  word-break: break-all;
 }
 
 .header-container-navigation-button_tour-text {
@@ -336,6 +338,7 @@ img {
   gap: 10px;
   border: 1px solid #CC9933;
   border-radius: 10px;
+  word-break: break-all;
 }
 
 .header-container-navigation-button_callback-text {
@@ -355,6 +358,7 @@ img {
 
 
 .flex-all-banners {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
 
@@ -366,7 +370,7 @@ img {
 
 .offers-title {
   padding-left: 40px;
-  padding-bottom: 20px;
+
 }
 
 .offers-list {
@@ -391,6 +395,7 @@ img {
   justify-content: flex-end;
   flex-direction: column;
   align-self: flex-end;
+
 
 }
 
@@ -477,10 +482,8 @@ img {
 }
 
 .offers-list-banner-block_text-detailed_link {
-
-  width: 110px;
   align-items: center;
-
+  width: 110px;
 }
 
 .offers-list-banner-block_text-detailed_link-text {
@@ -530,25 +533,162 @@ img {
   margin-bottom: 40px;
 }
 
-
 /* style text end ********************************************************/
-
-
-
 /* offers end *********************************************************/
 
+
 /* about us start *********************************************************/
+
 .about-us {
   margin-bottom: 70px;
 }
 
+.about-us-title {
+
+  padding-left: 40px;
+}
+
+.about-us-description {
+
+  margin-top: 20px;
+
+  width: 888px;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  text-align: left;
+  color: #000000;
+
+}
+
+/* about us end *********************************************************/
 
 
-/* about us start *********************************************************/
 .section-title {
 
   margin: 0;
 }
+
+
+/* services start *********************************************************/
+
+.services-title {
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+
+.services-list {
+
+  flex-wrap: wrap;
+
+  /* width: 573px; */
+
+
+
+}
+
+.services-list-item {
+
+  min-height: 330px;
+  width: 573px;
+  margin-bottom: 24px;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  padding-left: 45px;
+
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+
+
+
+
+  /* outline: 1px solid #E4E4E4; */
+}
+
+.services-list-item:not(:nth-child(2n)) {
+  margin-right: 24px;
+}
+
+
+
+
+.services-list-item-title_link {
+
+  width: fit-content;
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+
+
+}
+
+.services-list-item-title_link-text {
+  margin-right: 6px;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #CC9933;
+}
+
+.services-svg {
+
+  margin-bottom: 0.4px;
+
+}
+
+
+.services-list-item-description {
+  margin-bottom: 35px;
+
+  width: 388px;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+
+
+.decor-services-list-item-1 {
+  background-image: url(../img/Услуги_1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.decor-services-list-item-2 {
+  background-image: url(../img/Услуги_2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.decor-services-list-item-3 {
+  background-image: url(../img/Услуги_3.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.decor-services-list-item-4 {
+  background-image: url(../img/Услуги_4.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+
+
+
+
+/* services end *********************************************************/
 
 
 
