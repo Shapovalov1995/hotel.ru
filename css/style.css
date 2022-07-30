@@ -378,8 +378,11 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-right: 24px;
 
+}
+
+.test:nth-child(odd) {
+  margin-right: 24px;
 }
 
 /* Блоки баннеров start ********************************************************/
@@ -392,10 +395,8 @@ img {
   padding-left: 45px;
 
   display: flex;
-  justify-content: flex-end;
   flex-direction: column;
-  align-self: flex-end;
-
+  align-items: flex-start;
 
 }
 
@@ -407,8 +408,8 @@ img {
   padding-left: 45px;
 
   display: flex;
-  justify-content: flex-end;
   flex-direction: column;
+  align-items: flex-start;
 
 }
 
@@ -482,8 +483,11 @@ img {
 }
 
 .offers-list-banner-block_text-detailed_link {
+
+  display: flex;
   align-items: center;
-  width: 110px;
+  margin-bottom: 40px;
+
 }
 
 .offers-list-banner-block_text-detailed_link-text {
@@ -565,12 +569,9 @@ img {
 
 /* about us end *********************************************************/
 
-
 .section-title {
-
   margin: 0;
 }
-
 
 /* services start *********************************************************/
 
@@ -580,87 +581,85 @@ img {
 }
 
 .services-list {
-
+  display: flex;
   flex-wrap: wrap;
-
-  /* width: 573px; */
-
-
-
 }
 
-.services-list-item {
+/* services start *********************************************************/
 
-  min-height: 330px;
-  width: 573px;
+.services-list-item {
+  align-items: flex-start;
   margin-bottom: 24px;
+  width: 573px;
+  min-height: 330px;
+
+  border-radius: 16px;
+  flex-grow: 1;
+  padding-left: 45px;
   border-radius: 16px;
   background-color: #FFFFFF;
-  padding-left: 45px;
 
+  padding-left: 45px;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-
-
-
-
-  /* outline: 1px solid #E4E4E4; */
 }
 
-.services-list-item:not(:nth-child(2n)) {
+/* services-block end *********************************************************/
+
+.services-list-item:nth-child(odd) {
   margin-right: 24px;
 }
 
-
-
-
 .services-list-item-title_link {
-
-  width: fit-content;
   display: flex;
-  align-content: space-between;
   align-items: center;
-
-
 }
 
+.services-svg {
+  margin-bottom: 2px;
+}
+
+/* services-block end *********************************************************/
+
+
+/* services style start  *********************************************************/
+
+
 .services-list-item-title_link-text {
-  margin-right: 6px;
+  word-break: break-all;
+  margin-right: 9px;
   font-family: 'Muller';
   font-style: normal;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
   color: #CC9933;
 }
 
-.services-svg {
-
-  margin-bottom: 0.4px;
-
-}
 
 
 .services-list-item-description {
-  margin-bottom: 35px;
-
   width: 388px;
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
+
   font-size: 16px;
   line-height: 200%;
   color: #000000;
+  margin-bottom: 35px;
 }
 
-
+/* services style end  *********************************************************/
 
 .decor-services-list-item-1 {
   background-image: url(../img/Услуги_1.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
+  padding-top: 165px;
 }
 
 .decor-services-list-item-2 {
@@ -668,6 +667,7 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
+  padding-top: 165px;
 }
 
 .decor-services-list-item-3 {
@@ -675,6 +675,7 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
+  padding-top: 165px;
 }
 
 .decor-services-list-item-4 {
@@ -682,48 +683,22 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
+  padding-top: 165px;
 }
 
-
-
-
-
 /* services end *********************************************************/
-
-
 
 .services {
   margin-bottom: 70px;
 }
 
-
-
 .advantages {
   margin-bottom: 70px;
 }
 
-
-
 .location {
   margin-bottom: 70px;
 }
-
-
-
-.search-tour-background {
-  margin-bottom: 70px;
-  background-color: #E9E9E9;
-  border-radius: 15px;
-}
-
-
-
-.search-tour-bar {
-  background-color: white;
-  border-radius: 15px;
-}
-
-
 
 .contacts {
   margin-bottom: 40px;
