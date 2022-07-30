@@ -358,7 +358,7 @@ img {
 
 
 .flex-all-banners {
-  margin-top: 20px;
+
   display: flex;
   justify-content: space-between;
 
@@ -370,6 +370,8 @@ img {
 
 .offers-title {
   padding-left: 40px;
+  padding-bottom: 20px;
+
 
 }
 
@@ -381,7 +383,7 @@ img {
 
 }
 
-.test:nth-child(odd) {
+.margin_offers:nth-child(odd) {
   margin-right: 24px;
 }
 
@@ -550,11 +552,12 @@ img {
 .about-us-title {
 
   padding-left: 40px;
+  padding-bottom: 20pxs;
 }
 
 .about-us-description {
 
-  margin-top: 20px;
+
 
   width: 888px;
   font-family: 'Muller';
@@ -689,7 +692,7 @@ img {
 /* services end *********************************************************/
 
 .services {
-  margin-bottom: 70px;
+  padding-bottom: 46px;
 }
 
 .advantages {
