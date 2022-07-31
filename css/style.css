@@ -454,7 +454,7 @@ img {
 
 .offers-list-banner-block_text-title {
 
-  margin-top: 36px;
+  padding-top: 36px;
 
   font-family: 'Muller';
   font-style: normal;
@@ -467,7 +467,7 @@ img {
 .offers-list-banner-block_text-price {
 
   display: block;
-  margin-top: 8px;
+  padding-top: 8px;
   margin-bottom: auto;
 
   font-family: 'Muller';
@@ -510,7 +510,7 @@ img {
 
 .offers-list-banner-luxe-block_text-title {
 
-  margin-top: 200px;
+  padding-top: 200px;
 
   font-family: 'Muller';
   font-style: normal;
@@ -523,7 +523,7 @@ img {
 .offers-list-banner-luxe-block_text-price {
 
   display: block;
-  /* margin-top: 8px; */
+
   margin-bottom: auto;
 
   font-family: 'Muller';
@@ -692,14 +692,37 @@ img {
 .services {
   padding-bottom: 46px;
 }
-
 /* services end *********************************************************/
 
-
-
+/* services start *********************************************************/
 .advantages {
   margin-bottom: 70px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* services end *********************************************************/
+
 
 .location {
   margin-bottom: 70px;
@@ -713,3 +736,4 @@ img {
 .footer {
   margin-bottom: 30px;
 }
+
