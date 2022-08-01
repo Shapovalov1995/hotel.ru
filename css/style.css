@@ -361,17 +361,16 @@ img {
 
   display: flex;
   justify-content: space-between;
+  gap: 24px;
 
 }
 
 .offers {
-  margin-bottom: 70px;
+  padding-bottom: 70px;
 }
 
 .offers-title {
   padding-left: 40px;
-  padding-bottom: 20px;
-
 
 }
 
@@ -383,17 +382,22 @@ img {
 
 }
 
-.margin_offers:nth-child(odd) {
-  margin-right: 24px;
+.grow_offers {
+  flex-grow: 1;
 }
 
+
+
 /* Блоки баннеров start ********************************************************/
+
+.offers-list-banner:not(:last-child) {
+  margin-bottom: 24px;
+}
 
 .offers-list-banner {
   width: 573px;
   min-height: 258px;
   border-radius: 16px;
-  flex-grow: 1;
   padding-left: 45px;
 
   display: flex;
@@ -406,7 +410,6 @@ img {
   width: 573px;
   min-height: 100%;
   border-radius: 16px;
-  flex-grow: 1;
   padding-left: 45px;
 
   display: flex;
@@ -425,7 +428,7 @@ img {
 
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 24px;
+
   word-break: break-all;
 }
 
@@ -573,26 +576,28 @@ img {
 /* about us end *********************************************************/
 
 .section-title {
-  margin: 0;
+  margin-bottom: 20px;
 }
+
+
+
+
 
 /* services start *********************************************************/
 
-.services-title {
-  padding-left: 40px;
-  padding-bottom: 20px;
+.services {
+  padding-bottom: 70px;
 }
 
 .services-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 24px;
 }
 
-/* services start *********************************************************/
 
 .services-list-item {
   align-items: flex-start;
-  margin-bottom: 24px;
   width: 573px;
   min-height: 330px;
 
@@ -610,9 +615,9 @@ img {
 
 /* services-block end *********************************************************/
 
-.services-list-item:nth-child(odd) {
+/* .services-list-item:nth-child(odd) {
   margin-right: 24px;
-}
+} */
 
 .services-list-item-title_link {
   display: flex;
@@ -689,51 +694,66 @@ img {
   padding-top: 165px;
 }
 
-.services {
-  padding-bottom: 46px;
-}
+
+
 /* services end *********************************************************/
 
-/* services start *********************************************************/
+/* advantages start *********************************************************/
+
 .advantages {
-  margin-bottom: 70px;
+  padding-bottom: 70px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.advantages-list-item {
+  min-height: 276px;
+  width: 276px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 
+.advantages-list-item-content {
+  align-self: center;
+}
 
+/* style start *********************************************************/
 
+.advantages-list-item-description {
 
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
 
+  line-height: 200%;
+  color: #000000;
+  width: 189px;
+}
 
+/* style end *********************************************************/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* services end *********************************************************/
+/* advantages end *********************************************************/
 
 
 .location {
-  margin-bottom: 70px;
+  padding-bottom: 70px;
 }
 
 .contacts {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 
 .footer {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
-
