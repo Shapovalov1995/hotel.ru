@@ -555,7 +555,7 @@ img {
 .about-us-title {
 
   padding-left: 40px;
-  padding-bottom: 20pxs;
+
 }
 
 .about-us-description {
@@ -581,8 +581,6 @@ img {
 
 
 
-
-
 /* services start *********************************************************/
 
 .services {
@@ -593,35 +591,38 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+
 }
 
 
 .services-list-item {
+
+
   align-items: flex-start;
   width: 573px;
   min-height: 330px;
+  border-radius: 16px;
+  padding-top: 191px;
 
-  border-radius: 16px;
-  flex-grow: 1;
-  padding-left: 45px;
-  border-radius: 16px;
   background-color: #FFFFFF;
-
-  padding-left: 45px;
   display: flex;
-  justify-content: flex-end;
   flex-direction: column;
+  padding-left: 45px;
+
+  word-break: break-all;
+
 }
+
 
 /* services-block end *********************************************************/
 
-/* .services-list-item:nth-child(odd) {
-  margin-right: 24px;
-} */
 
 .services-list-item-title_link {
+
   display: flex;
   align-items: center;
+
+
 }
 
 .services-svg {
@@ -635,7 +636,7 @@ img {
 
 
 .services-list-item-title_link-text {
-  word-break: break-all;
+
   margin-right: 9px;
   font-family: 'Muller';
   font-style: normal;
@@ -647,9 +648,8 @@ img {
 }
 
 
-
 .services-list-item-description {
-  width: 388px;
+  width: 402px;
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
@@ -657,7 +657,7 @@ img {
   font-size: 16px;
   line-height: 200%;
   color: #000000;
-  margin-bottom: 35px;
+
 }
 
 /* services style end  *********************************************************/
@@ -667,7 +667,6 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
-  padding-top: 165px;
 }
 
 .decor-services-list-item-2 {
@@ -675,7 +674,7 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
-  padding-top: 165px;
+  padding-top: 191px;
 }
 
 .decor-services-list-item-3 {
@@ -683,7 +682,7 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
-  padding-top: 165px;
+  padding-top: 191px;
 }
 
 .decor-services-list-item-4 {
@@ -691,7 +690,7 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
-  padding-top: 165px;
+  padding-top: 191px;
 }
 
 
@@ -716,17 +715,28 @@ img {
   background-color: #FFFFFF;
   border-radius: 16px;
 
-  padding-top: 40px;
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
+
 }
 
-
-.advantages-list-item-content {
+.advantages-list-item-block_content {
   align-self: center;
+
+  align-items: flex-start;
+  flex-direction: column;
+
+  width: 189px;
+  word-break: break-word;
 }
 
-/* style start *********************************************************/
+.test {
+
+  display: flex;
+}
+
+
 
 .advantages-list-item-description {
 
@@ -737,10 +747,8 @@ img {
 
   line-height: 200%;
   color: #000000;
-  width: 189px;
-}
 
-/* style end *********************************************************/
+}
 
 /* advantages end *********************************************************/
 
