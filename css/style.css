@@ -198,8 +198,7 @@ h2 {
 }
 
 .container {
-  /* width: 1170px;
-  margin: 0 auto; */
+
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -292,7 +291,7 @@ img {
 
 .header-navigation-title-list {
   display: flex;
-  margin-left: 45px;
+  padding-left: 45px;
 }
 
 .header-navigation-title-list-item:not(:last-child) {
@@ -312,26 +311,26 @@ img {
 /* Button navigation start *********************************************************/
 
 .button-header-navigation {
-  margin-right: 45px;
+  padding-right: 45px;
   display: flex;
 }
 
 
-.btn:not(:last-child) {
+.btn-navigation:not(:last-child) {
   margin-right: 40px;
 }
 
-.btn {
+.btn-navigation {
 
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
-  padding: 13px 20px;
-
-  border: 1px solid #CC9933;
-  border-radius: 10px;
   font-size: 16px;
   color: #CC9933;
+  padding: 13px 20px;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+
 
 }
 
@@ -732,10 +731,65 @@ img {
 
 /* advantages end *********************************************************/
 
+/* location start *********************************************************/
 
 .location {
   padding-bottom: 70px;
 }
+
+
+.location-list {
+  word-break: break-all;
+
+}
+
+.location-list-card {
+
+  background-color: #FFFFFF;
+  width: 374px;
+  min-height: 440px;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+
+
+}
+
+.location-list-card-price {
+  display: flex;
+}
+
+
+
+
+.decor-location-list-card-1 {
+  background-image: url(../img/Размещение_1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  padding-top: 217px;
+}
+
+
+.btn-location-list {
+
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+
+  color: #CC9933;
+  padding: 13px 20px;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+
+}
+
+
+/* location end *********************************************************/
 
 .contacts {
   padding-bottom: 40px;
