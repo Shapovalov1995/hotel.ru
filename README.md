@@ -1,9 +1,6 @@
 # hotel.ru
 
-
-
 git push --set-upstream origin dev
-
 
 Вёрстка
 

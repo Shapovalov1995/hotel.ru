@@ -273,38 +273,70 @@ img {
 /* Navigation start ********************************************************/
 
 .header-navigation {
-
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 
+.header-navigation-background {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  word-break: break-all;
 
-.test {
-background-color: #FFFFFF;
 }
 
+.header-navigation-title-list {
+  display: flex;
+  margin-left: 45px;
+}
 
+.header-navigation-title-list-item:not(:last-child) {
+  margin-right: 45px;
+}
 
+.header-navigation-title-list-item_link-text {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
 
+  color: #666666;
 
+}
 
-
-
-
-
-
-.header-container-navigation-list-item-link-text {}
-
-/* Navigation end ********************************************************/
 /* Button navigation start *********************************************************/
+
+.button-header-navigation {
+  margin-right: 45px;
+  display: flex;
+}
+
+
+.btn:not(:last-child) {
+  margin-right: 40px;
+}
+
 .btn {
 
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
   padding: 13px 20px;
+
   border: 1px solid #CC9933;
   border-radius: 10px;
+  font-size: 16px;
+  color: #CC9933;
 
 }
 
 /* Button navigation end  *********************************************************/
+/* Navigation end ********************************************************/
 /* header - end *********************************************************/
 
 
