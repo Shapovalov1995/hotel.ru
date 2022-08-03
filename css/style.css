@@ -322,15 +322,20 @@ img {
 
 .btn-navigation {
 
+  word-break: break-all;
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   color: #CC9933;
-  padding: 13px 20px;
+
+  padding: 10px 20px;
   border: 1px solid #CC9933;
   border-radius: 10px;
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 
 }
 
@@ -750,19 +755,93 @@ img {
   min-height: 440px;
   border-radius: 16px;
 
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-end;
 
+
+  padding-left: 45px;
 
 }
+
 
 .location-list-card-price {
+
   display: flex;
+  align-items: center;
+
+
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+
+  padding-top: 32px;
+
+  margin-bottom: 16px;
+
+}
+
+.location-list-card-price-from {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #999999;
+
+}
+
+.location-list-card-price-price {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+  margin-left: 4px;
+
 }
 
 
+
+.location-list-card-price-text {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+
+}
+
+
+.location-list-card-hotelname {
+
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+
+  color: #000000;
+
+
+  margin-bottom: 16px;
+
+
+}
+
+.location-list-card-hotelname-citi {
+
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+
+  color: #999999;
+
+  display: block;
+  margin-bottom: auto
+}
 
 
 .decor-location-list-card-1 {
@@ -774,17 +853,24 @@ img {
 }
 
 
+
 .btn-location-list {
 
+  word-break: break-all;
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-
   color: #CC9933;
-  padding: 13px 20px;
   border: 1px solid #CC9933;
   border-radius: 10px;
+
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 45px;
 
 }
 
