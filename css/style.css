@@ -197,6 +197,7 @@ h2 {
 
 .container {
 
+  cursor: default;
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -747,7 +748,7 @@ img {
 
 
 .location-list-card {
-  word-break: break-all;
+  word-break: break-word;
   background-color: #FFFFFF;
   width: 374px;
   min-height: 440px;
@@ -769,6 +770,81 @@ img {
   padding-top: 249px;
 }
 
+.decor-location-list-card-2 {
+  background-image: url(../img/Размещение_2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  padding-top: 249px;
+}
+
+.decor-location-list-card-3 {
+  background-image: url(../img/Размещение_3.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  padding-top: 249px;
+}
+
+.decor-location-list-card-4 {
+  background-image: url(../img/Размещение_4.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  padding-top: 249px;
+}
+
+.decor-location-list-card-5 {
+  background-image: url(../img/Размещение_5.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  padding-top: 249px;
+}
+
+.decor-location-list-card-6 {
+  background-image: url(../img/Размещение_6.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  padding-top: 249px;
+}
+
+.decor-location-list-card-7 {
+  background-image: url(../img/Размещение_7.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  padding-top: 249px;
+}
+
+.decor-location-list-card-8 {
+  background-image: url(../img/Размещение_8.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  padding-top: 249px;
+}
+
+
+.decor-location-list-card-9 {
+  padding: 0;
+  background-image: url(../img/Размещение_9.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.location-list-card-detailed_link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 36px;
+
+}
+
 .location-list-card-price_rating {
   display: flex;
   align-items: flex-start;
@@ -781,6 +857,17 @@ img {
 }
 
 /* location style start *********************************************************/
+.location-list-card-detailed_link-text {
+
+  margin-right: 7px;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+
+}
 
 .location-list-card-price_rating-price {
   display: flex;
