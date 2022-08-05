@@ -198,8 +198,7 @@ h2 {
 }
 
 .container {
-  /* width: 1170px;
-  margin: 0 auto; */
+
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -210,7 +209,7 @@ h2 {
 
 img {
   max-width: 100%;
-  vertical-align: sub;
+  vertical-align: super;
   height: auto;
 }
 
@@ -272,92 +271,80 @@ img {
 
 /* Navigation start ********************************************************/
 
-.header-container-menubar {
+.header-navigation {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+
+.header-navigation-background {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
   display: flex;
   align-items: center;
-  background-color: white;
-  border-radius: 16px;
+  justify-content: space-between;
+  word-break: break-all;
+
 }
 
-.header-container {
-  align-items: center;
+.header-navigation-title-list {
+  display: flex;
+  padding-left: 45px;
 }
 
-.header-container-navigation-list {
-  padding-left: 46px;
+.header-navigation-title-list-item:not(:last-child) {
+  margin-right: 45px;
 }
 
-.header-container-navigation-list-item:not(:last-child) {
-  padding-right: 46px;
-}
-
-
-.header-container-navigation-list-item-link-text {
+.header-navigation-title-list-item_link-text {
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+
   color: #666666;
+
 }
 
-/* Navigation end ********************************************************/
 /* Button navigation start *********************************************************/
 
-.header-container-navigation-button {
-  padding: 14px 46px 14px 107px;
+.button-header-navigation {
+  padding-right: 45px;
+  display: flex;
 }
 
-.header-container-navigation-button_tour:not(:last-child) {
+
+.btn-navigation:not(:last-child) {
   margin-right: 40px;
 }
 
-.header-container-navigation-button {
-  align-items: center;
-}
+.btn-navigation {
 
-.header-container-navigation-button_tour {
-  margin-right: 40px;
-  padding: 13px 20px;
-  gap: 10px;
-  border: 1px solid #CC9933;
-  border-radius: 10px;
   word-break: break-all;
-}
-
-.header-container-navigation-button_tour-text {
-  font-family: 'Muller', Arial, Helvetica, sans-serif;
+  font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  width: 67px;
   color: #CC9933;
-}
 
-.header-container-navigation-button_callback {
-  padding: 13px 20px;
-  gap: 10px;
+  padding: 10px 20px;
   border: 1px solid #CC9933;
   border-radius: 10px;
-  word-break: break-all;
-}
+  gap: 10px;
 
-.header-container-navigation-button_callback-text {
-  font-family: 'Muller', Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  width: 137px;
-  color: #CC9933;
 }
 
 /* Button navigation end  *********************************************************/
+/* Navigation end ********************************************************/
 /* header - end *********************************************************/
 
 
 /* offers start ********************************************************/
 
 
-.flex-all-banners {
+.offers-list-all_banners {
 
   display: flex;
   justify-content: space-between;
@@ -376,7 +363,6 @@ img {
 
 .offers-list {
 
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
 
@@ -731,11 +717,6 @@ img {
   word-break: break-word;
 }
 
-.test {
-
-  display: flex;
-}
-
 
 
 .advantages-list-item-description {
@@ -752,10 +733,131 @@ img {
 
 /* advantages end *********************************************************/
 
+/* location start *********************************************************/
 
 .location {
   padding-bottom: 70px;
 }
+
+
+.location-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+
+
+.location-list-card {
+  word-break: break-all;
+  background-color: #FFFFFF;
+  width: 374px;
+  min-height: 440px;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 45px;
+  padding-right: 45px;
+
+}
+
+.decor-location-list-card-1 {
+  background-image: url(../img/Размещение_1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  padding-top: 249px;
+}
+
+.location-list-card-price_rating {
+  display: flex;
+  align-items: flex-start;
+  width: -webkit-fill-available;
+  margin-bottom: 10px;
+}
+
+.location-list-card-rating {
+  margin-left: auto;
+}
+
+/* location style start *********************************************************/
+
+.location-list-card-price_rating-price {
+  display: flex;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+}
+
+
+.location-list-card-price_rating-price-from {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #999999;
+}
+
+.location-list-card-price_rating-price-price {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+  margin-left: 4px;
+
+}
+
+.location-list-card-price_rating-price-text {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  margin-left: 4px;
+}
+
+.location-list-card-hotelname {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 13px;
+}
+
+.location-list-card-hotelname-citi {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #999999;
+  margin-bottom: auto;
+}
+
+/* location style end *********************************************************/
+
+/* location btn start *********************************************************/
+.btn-location-list-card {
+  word-break: break-all;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+
+  color: #CC9933;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-bottom: 45px;
+}
+
+/* location btn end *********************************************************/
+/* location end *********************************************************/
 
 .contacts {
   padding-bottom: 40px;
