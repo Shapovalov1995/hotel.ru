@@ -146,8 +146,11 @@ html {
 
 body {
   min-width: 1200px;
-  font-family: 'font', sans-serif;
+  word-break: break-all;
+  font-family: 'Muller', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #F1F1F1;
+  cursor: default;
+
 }
 
 a {
@@ -171,6 +174,7 @@ h2 {
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
+  line-height: 40px;
   color: #333333;
 }
 
@@ -196,19 +200,16 @@ h2 {
 }
 
 .container {
-
-  cursor: default;
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-
 }
 
 
 
 img {
   max-width: 100%;
-  vertical-align: super;
+  vertical-align: middle;
   height: auto;
 }
 
@@ -223,50 +224,76 @@ img {
   padding-bottom: 30px;
 }
 
-.header-top-container {
+/* .header-top-container {
+  align-items: center;
+} */
+
+
+/* .header-top-logo_link {
+  margin-right: auto;
+} */
+
+/* .decor-header-top-logo_link {
+  width: 261px;
+
+} */
+
+/* .header-top-contact_link {
+  margin-right: 540px;
+} */
+
+
+.header-top {
+  display: flex;
   align-items: center;
 }
 
 
-.header-top-logo_link {
-  margin-right: auto;
+
+.header-top-block-logo_contact-logo_link {
+  vertical-align: middle;
+  margin-right: 40px;
 }
 
-.decor-header-top-logo_link {
-  width: 261px;
-
+.header-top-block-logo_contact-contact_link {
+  padding-top: 1px;
 }
 
-.header-top-contact_link {
-  margin-right: 540px;
-}
+.header-top-block-logo_contact-contact_link-text {
 
-.header-top-contact_link-text {
-  width: 173px;
   font-family: 'Muller';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
+  line-height: 20px;
   color: #666666;
 }
 
 
-.decor-header-top-login_account-link {
-  background-image: url("../img/Vector.svg");
-  background-position: left center;
-  background-size: 24px 24px;
-  background-repeat: no-repeat;
-  padding-left: 28px;
-  padding-top: 3px;
+
+.header-top-login_account_link {
+
+  padding-top: 1px;
+
+  margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
-.header-top-login_account-link-text {
+.svg-header-top-login_account_link {
+  margin-bottom: 2px;
+}
+
+.header-top-login_account_link-text {
+  margin-left: 5px;
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  line-height: 16px;
   color: #CC9933;
 }
+
 
 /* Navigation start ********************************************************/
 
@@ -277,8 +304,8 @@ img {
 
 
 .header-navigation-background {
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: #FFFFFF;
   border-radius: 16px;
   display: flex;
@@ -290,7 +317,7 @@ img {
 
 .header-navigation-title-list {
   display: flex;
-  padding-left: 45px;
+  padding-left: 46px;
 }
 
 .header-navigation-title-list-item:not(:last-child) {
@@ -302,6 +329,7 @@ img {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  line-height: 16px;
 
   color: #666666;
 
@@ -316,7 +344,7 @@ img {
 
 
 .btn-navigation:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 38px;
 }
 
 .btn-navigation {
@@ -326,6 +354,7 @@ img {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+
   color: #CC9933;
 
   padding: 10px 20px;
@@ -400,6 +429,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: flex-end;
 
 }
 
@@ -414,7 +444,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 
-  word-break: break-all;
+
 }
 
 
@@ -424,14 +454,14 @@ img {
 
   background-repeat: no-repeat;
   background-size: cover;
-  word-break: break-all;
+
 }
 
 .decor-offers-list-banner-luxe-1 {
   background-image: url(../img/Номер_люкс.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  word-break: break-all;
+
 }
 
 /* Блоки баннеров Decoration *********************************************************/
@@ -442,41 +472,40 @@ img {
 
 .offers-list-banner-block_text-title {
 
-  padding-top: 36px;
+  padding-top: 41px;
 
   font-family: 'Muller';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
+  line-height: 40px;
   color: #FFFFFF;
+  margin-bottom: 14px;
+
 
 }
 
 .offers-list-banner-block_text-price {
 
   display: block;
-  padding-top: 8px;
+  padding-top: 1px;
   margin-bottom: auto;
 
-  font-family: 'Muller';
+  font-family: unset;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
+  line-height: 20px;
   color: #FFFFFF;
   opacity: 0.8;
 
-}
-
-
-.offers-list-banner-block_text-link {
-  margin-bottom: 40px;
 }
 
 .offers-list-banner-block_text-detailed_link {
 
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 
 }
 
@@ -488,6 +517,7 @@ img {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  line-height: 16px;
   color: #F0BF5F;
 }
 
@@ -498,30 +528,34 @@ img {
 
 .offers-list-banner-luxe-block_text-title {
 
-  padding-top: 200px;
+  /* padding-top: 213px; */
 
   font-family: 'Muller';
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
+  line-height: 60px;
   color: #FFFFFF;
+  margin-bottom: 14px;
 
 }
 
 .offers-list-banner-luxe-block_text-price {
 
-  display: block;
 
-  margin-bottom: auto;
-
-  font-family: 'Muller';
+  margin-bottom: 45px;
+  font-family: unset;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
+  line-height: 30px;
   color: #FFFFFF;
   opacity: 0.8;
 
 }
+
+
+
 
 .offers-list-banner-luxe-block_text-link {
   margin-bottom: 40px;
@@ -594,7 +628,7 @@ img {
   flex-direction: column;
   padding-left: 45px;
 
-  word-break: break-all;
+
 
 }
 
@@ -928,7 +962,7 @@ img {
 
 /* location btn start *********************************************************/
 .btn-location-list-card {
-  word-break: break-all;
+
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
