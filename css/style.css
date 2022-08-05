@@ -332,12 +332,6 @@ img {
   padding: 10px 20px;
   border: 1px solid #CC9933;
   border-radius: 10px;
-<<<<<<< HEAD
-=======
-  display: flex;
-  flex-direction: row;
-  align-items: center;
->>>>>>> 2af38e1da94bedb5a45e21f291d85a93a9992570
   gap: 10px;
 
 }
@@ -747,7 +741,6 @@ img {
 
 
 .location-list {
-<<<<<<< HEAD
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
@@ -757,20 +750,11 @@ img {
 
 .location-list-card {
   word-break: break-all;
-=======
-  word-break: break-all;
-
-}
-
-.location-list-card {
-
->>>>>>> 2af38e1da94bedb5a45e21f291d85a93a9992570
   background-color: #FFFFFF;
   width: 374px;
   min-height: 440px;
   border-radius: 16px;
 
-<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -779,103 +763,11 @@ img {
 
 }
 
-=======
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-
-  padding-left: 45px;
-
-}
-
-
-.location-list-card-price {
-
-  display: flex;
-  align-items: center;
-
-
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  color: #000000;
-
-  padding-top: 32px;
-
-  margin-bottom: 16px;
-
-}
-
-.location-list-card-price-from {
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: #999999;
-
-}
-
-.location-list-card-price-price {
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  color: #000000;
-  margin-left: 4px;
-
-}
-
-
-
-.location-list-card-price-text {
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  color: #000000;
-
-}
-
-
-.location-list-card-hotelname {
-
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-
-  color: #000000;
-
-
-  margin-bottom: 16px;
-
-
-}
-
-.location-list-card-hotelname-citi {
-
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-
-  color: #999999;
-
-  display: block;
-  margin-bottom: auto
-}
-
-
->>>>>>> 2af38e1da94bedb5a45e21f291d85a93a9992570
 .decor-location-list-card-1 {
   background-image: url(../img/Размещение_1.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
-<<<<<<< HEAD
   padding-top: 249px;
 }
 
@@ -951,21 +843,11 @@ img {
 
 /* location btn start *********************************************************/
 .btn-location-list-card {
-=======
-  padding-top: 217px;
-}
-
-
-
-.btn-location-list {
-
->>>>>>> 2af38e1da94bedb5a45e21f291d85a93a9992570
   word-break: break-all;
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-<<<<<<< HEAD
 
   color: #CC9933;
   border: 1px solid #CC9933;
@@ -975,22 +857,6 @@ img {
 }
 
 /* location btn end *********************************************************/
-=======
-  color: #CC9933;
-  border: 1px solid #CC9933;
-  border-radius: 10px;
-
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px 20px;
-  margin-bottom: 45px;
-
-}
-
-
->>>>>>> 2af38e1da94bedb5a45e21f291d85a93a9992570
 /* location end *********************************************************/
 
 .contacts {
