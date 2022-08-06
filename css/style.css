@@ -146,11 +146,18 @@ html {
 
 body {
   min-width: 1200px;
-  word-break: break-all;
   font-family: 'Muller', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #F1F1F1;
   cursor: default;
 
+}
+
+.word-break_word {
+  word-break: break-word;
+}
+
+.word-break_all {
+  word-break: break-all;
 }
 
 a {
@@ -203,6 +210,7 @@ h2 {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+
 }
 
 
@@ -217,50 +225,29 @@ img {
 
 /* Header start ********************************************************/
 .header {
-  padding: 30px 0 70px 0;
+  padding: 30px 0 71px 0;
 }
 
 .header-top {
   padding-bottom: 30px;
 }
 
-/* .header-top-container {
-  align-items: center;
-} */
-
-
-/* .header-top-logo_link {
-  margin-right: auto;
-} */
-
-/* .decor-header-top-logo_link {
-  width: 261px;
-
-} */
-
-/* .header-top-contact_link {
-  margin-right: 540px;
-} */
-
-
 .header-top {
   display: flex;
   align-items: center;
 }
 
-
-
 .header-top-block-logo_contact-logo_link {
   vertical-align: middle;
   margin-right: 40px;
+
+
 }
+
+
 
 .header-top-block-logo_contact-contact_link {
   padding-top: 1px;
-}
-
-.header-top-block-logo_contact-contact_link-text {
-
   font-family: 'Muller';
   font-style: normal;
   font-weight: 500;
@@ -272,9 +259,7 @@ img {
 
 
 .header-top-login_account_link {
-
   padding-top: 1px;
-
   margin-left: auto;
   display: flex;
   align-items: center;
@@ -304,14 +289,13 @@ img {
 
 
 .header-navigation-background {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   background-color: #FFFFFF;
   border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  word-break: break-all;
 
 }
 
@@ -324,16 +308,15 @@ img {
   margin-right: 45px;
 }
 
-.header-navigation-title-list-item_link-text {
+.header-navigation-title-list-item {
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-
   color: #666666;
-
 }
+
 
 /* Button navigation start *********************************************************/
 
@@ -349,7 +332,7 @@ img {
 
 .btn-navigation {
 
-  word-break: break-all;
+
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
@@ -357,7 +340,7 @@ img {
 
   color: #CC9933;
 
-  padding: 10px 20px;
+  padding: 11px 20px;
   border: 1px solid #CC9933;
   border-radius: 10px;
   gap: 10px;
@@ -381,7 +364,7 @@ img {
 }
 
 .offers {
-  padding-bottom: 70px;
+  padding-bottom: 71px;
 }
 
 .offers-title {
@@ -399,6 +382,8 @@ img {
 .grow_offers {
   flex-grow: 1;
 }
+
+
 
 
 
@@ -568,7 +553,7 @@ img {
 /* about us start *********************************************************/
 
 .about-us {
-  margin-bottom: 70px;
+  padding-bottom: 70px;
 }
 
 .about-us-title {
@@ -578,9 +563,6 @@ img {
 }
 
 .about-us-description {
-
-
-
   width: 888px;
   font-family: 'Muller';
   font-style: normal;
@@ -595,7 +577,7 @@ img {
 /* about us end *********************************************************/
 
 .section-title {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 
@@ -603,8 +585,13 @@ img {
 /* services start *********************************************************/
 
 .services {
-  padding-bottom: 70px;
+  padding-bottom: 71px;
 }
+
+.services-title {
+  padding-left: 40px;
+}
+
 
 .services-list {
   display: flex;
@@ -621,7 +608,7 @@ img {
   width: 573px;
   min-height: 330px;
   border-radius: 16px;
-  padding-top: 191px;
+  padding-top: 201px;
 
   background-color: #FFFFFF;
   display: flex;
@@ -640,12 +627,13 @@ img {
 
   display: flex;
   align-items: center;
+  margin-bottom: 7px;
 
 
 }
 
 .services-svg {
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 /* services-block end *********************************************************/
@@ -656,13 +644,13 @@ img {
 
 .services-list-item-title_link-text {
 
-  margin-right: 9px;
+  margin-right: 8px;
   font-family: 'Muller';
   font-style: normal;
 
   font-weight: 500;
   font-size: 20px;
-  line-height: 200%;
+
   color: #CC9933;
 }
 
@@ -672,7 +660,7 @@ img {
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
-
+  padding-bottom: 35px;
   font-size: 16px;
   line-height: 200%;
   color: #000000;
@@ -693,7 +681,7 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
-  padding-top: 191px;
+
 }
 
 .decor-services-list-item-3 {
@@ -701,7 +689,7 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
-  padding-top: 191px;
+
 }
 
 .decor-services-list-item-4 {
@@ -709,7 +697,7 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
-  padding-top: 191px;
+
 }
 
 
@@ -719,7 +707,11 @@ img {
 /* advantages start *********************************************************/
 
 .advantages {
-  padding-bottom: 70px;
+  padding-bottom: 71px;
+}
+
+.advantages-title {
+  padding-left: 40px;
 }
 
 .advantages-list {
@@ -742,14 +734,13 @@ img {
 
 .advantages-list-item-block_content {
   align-self: center;
-
   align-items: flex-start;
   flex-direction: column;
+  width: 191px;
+  padding-left: 2px;
+  margin-bottom: 32.609px;
 
-  width: 189px;
-  word-break: break-word;
 }
-
 
 
 .advantages-list-item-description {
@@ -761,6 +752,7 @@ img {
 
   line-height: 200%;
   color: #000000;
+  padding-top: 4px;
 
 }
 
@@ -770,6 +762,10 @@ img {
 
 .location {
   padding-bottom: 70px;
+}
+
+.location-title {
+  padding-left: 40px;
 }
 
 
@@ -782,7 +778,7 @@ img {
 
 
 .location-list-card {
-  word-break: break-word;
+
   background-color: #FFFFFF;
   width: 374px;
   min-height: 440px;
@@ -791,7 +787,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 45px;
+  padding-left: 44px;
   padding-right: 45px;
 
 }
@@ -883,11 +879,18 @@ img {
   display: flex;
   align-items: flex-start;
   width: -webkit-fill-available;
-  margin-bottom: 10px;
+
 }
 
-.location-list-card-rating {
+.location-list-card_rating {
   margin-left: auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+
+.location-list-card-card_rating-decor:not(:last-child){
+  margin-right: 6px;
 }
 
 /* location style start *********************************************************/
@@ -905,11 +908,9 @@ img {
 
 .location-list-card-price_rating-price {
   display: flex;
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  color: #000000;
+  padding-left: 1px;
+  align-items: center;
+
 }
 
 
@@ -937,7 +938,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   color: #000000;
-  margin-left: 4px;
+  margin-left: 9px;
 }
 
 .location-list-card-hotelname {
@@ -946,7 +947,8 @@ img {
   font-weight: 400;
   font-size: 16px;
   color: #000000;
-  margin-bottom: 13px;
+
+  padding-left: 1px;
 }
 
 .location-list-card-hotelname-citi {
@@ -955,6 +957,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   color: #999999;
+  padding-left: 1px;
   margin-bottom: auto;
 }
 
@@ -971,7 +974,7 @@ img {
   color: #CC9933;
   border: 1px solid #CC9933;
   border-radius: 10px;
-  padding: 10px 20px;
+  padding: 11px 20px;
   margin-bottom: 45px;
 }
 
