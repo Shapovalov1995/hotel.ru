@@ -456,9 +456,7 @@ img {
 /* style text lite ********************************************************/
 
 .offers-list-banner-block_text-title {
-
   padding-top: 41px;
-
   font-family: 'Muller';
   font-style: normal;
   font-weight: 700;
@@ -466,8 +464,6 @@ img {
   line-height: 40px;
   color: #FFFFFF;
   margin-bottom: 14px;
-
-
 }
 
 .offers-list-banner-block_text-price {
@@ -985,6 +981,13 @@ img {
 /* location btn end *********************************************************/
 /* location end *********************************************************/
 
+.search-tour {
+  padding-bottom: 70px;
+}
+
+.search-tour-bar {
+  display: flex;
+}
 
 
 .search-tour-title {
@@ -1000,4 +1003,9 @@ img {
 
 .footer {
   padding-bottom: 30px;
+}
+
+
+.test {
+  display: flex;
 }
