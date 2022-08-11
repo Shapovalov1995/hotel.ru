@@ -1009,3 +1009,25 @@ img {
 .test {
   display: flex;
 }
+
+.one-third-width {
+  display: flex;
+}
+
+
+.row {
+	width: 200px;
+}
+
+
+input[type="number"] {
+	height: 26px;
+	line-height: 26px;
+	width: 100%;
+	text-indent: 6px;
+}
+
+#pyat::-webkit-inner-spin-button {
+  opacity: 1;
+}
+

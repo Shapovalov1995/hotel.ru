@@ -1358,19 +1358,24 @@
 
           <form class="test" action="https://jsonplaceholder.typicode.com/posts" method="post">
 
-            <select name="Citi">
-              <option value="Санкт-Петербург">Санкт-Петербург</option>
-              <option value="Саранск">Саранск</option>
-              <option value="Севастополь">Севастополь</option>
-              <option value="Северодвинск">Северодвинск</option>
-              <option value="Симферополь">Симферополь</option>
-              <option value="Сочи">Сочи</option>
-              <option value="Ставрополь">Ставрополь</option>
-              <option value="Сызрань">Сызрань</option>
-              <option value="Сыктывкар">Сыктывкар</option>
-            </select>
+
+
+              <select name="Citi"> autofocus
+                <option>Выберите из списка</option>
+                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                <option value="Саранск">Саранск</option>
+                <option value="Севастополь">Севастополь</option>
+                <option value="Северодвинск">Северодвинск</option>
+                <option value="Симферополь">Симферополь</option>
+                <option value="Сочи">Сочи</option>
+                <option value="Ставрополь">Ставрополь</option>
+                <option value="Сызрань">Сызрань</option>
+                <option value="Сыктывкар">Сыктывкар</option>
+              </select>
+
 
             <select name="Country">
+              <option>Выберите из списка</option>
               <option value="Австралия">Австралия</option>
               <option value="Австрия">Австрия</option>
               <option value="Азербайджан">Азербайджан</option>
@@ -1382,14 +1387,18 @@
               <option value="Бельгия">Бельгия</option>
             </select>
 
-
-
             <input type="date" name="">
 
 
+            <div class="row">
+              <input type="number" min="1" max="31" id="pyat">
+            </div>
+
+            <input id="inp" type="number" min="0" max="10">
+
 
           </form>
-
+          <!-- min="1" max="31" id="day" name="day" value="6" -->
         </div>
       </div>
     </section>
