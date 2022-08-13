@@ -202,7 +202,6 @@ h2 {
 
 .flex {
   display: flex;
-  justify-content: center;
 
 }
 
@@ -611,8 +610,6 @@ img {
   flex-direction: column;
   padding-left: 45px;
 
-
-
 }
 
 
@@ -888,7 +885,7 @@ img {
 }
 
 
-.location-list-card-card_rating-decor:not(:last-child){
+.location-list-card-card_rating-decor:not(:last-child) {
   margin-right: 6px;
 }
 
@@ -964,7 +961,7 @@ img {
 /* location style end *********************************************************/
 
 /* location btn start *********************************************************/
-.btn-location-list-card {
+.btn {
 
   font-family: 'Muller';
   font-style: normal;
@@ -981,6 +978,8 @@ img {
 /* location btn end *********************************************************/
 /* location end *********************************************************/
 
+/* search-tour start *********************************************************/
+
 .search-tour {
   padding-bottom: 70px;
 }
@@ -995,6 +994,50 @@ img {
   padding-left: 40px;
 }
 
+.form-search-tour-bar {
+  /* display: flex; */
+}
+
+
+.form-search-tour-bar-nigts,
+.form-search-tour-bar-tourists {
+  width: 200px;
+}
+
+
+/* input[type="number"] {
+  height: 26px;
+  line-height: 26px;
+  width: 100%;
+  text-indent: 6px;
+} */
+
+
+.pyat::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
+
+.form-search-tour-bar-city {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-search-tour-bar-country {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-search-tour-bar-date {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+/* search-tour end *********************************************************/
+
 
 .contacts {
   padding-bottom: 40px;
@@ -1004,30 +1047,3 @@ img {
 .footer {
   padding-bottom: 30px;
 }
-
-
-.test {
-  display: flex;
-}
-
-.one-third-width {
-  display: flex;
-}
-
-
-.row {
-	width: 200px;
-}
-
-
-input[type="number"] {
-	height: 26px;
-	line-height: 26px;
-	width: 100%;
-	text-indent: 6px;
-}
-
-#pyat::-webkit-inner-spin-button {
-  opacity: 1;
-}
-

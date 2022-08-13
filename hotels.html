@@ -1354,28 +1354,26 @@
         <h2 class="section-title search-tour-title">
           Хочу тур
         </h2>
-        <div class="reset-list search-tour-bar">
+        <div class="search-tour-bar">
 
-          <form class="test" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <form class="form-search-tour-bar" action="https://jsonplaceholder.typicode.com/posts" method="post">
 
-
-
-              <select name="Citi"> autofocus
-                <option>Выберите из списка</option>
-                <option value="Санкт-Петербург">Санкт-Петербург</option>
-                <option value="Саранск">Саранск</option>
-                <option value="Севастополь">Севастополь</option>
-                <option value="Северодвинск">Северодвинск</option>
-                <option value="Симферополь">Симферополь</option>
-                <option value="Сочи">Сочи</option>
-                <option value="Ставрополь">Ставрополь</option>
-                <option value="Сызрань">Сызрань</option>
-                <option value="Сыктывкар">Сыктывкар</option>
-              </select>
+            <label for=""></label>
+            <select name="city">
+              <option value="Санкт-Петербург">Санкт-Петербург</option>
+              <option value="Саранск">Саранск</option>
+              <option value="Севастополь">Севастополь</option>
+              <option value="Северодвинск">Северодвинск</option>
+              <option value="Симферополь">Симферополь</option>
+              <option value="Сочи">Сочи</option>
+              <option value="Ставрополь">Ставрополь</option>
+              <option value="Сызрань">Сызрань</option>
+              <option value="Сыктывкар">Сыктывкар</option>
+            </select>
 
 
-            <select name="Country">
-              <option>Выберите из списка</option>
+            <label for=""></label>
+            <select name="country">
               <option value="Австралия">Австралия</option>
               <option value="Австрия">Австрия</option>
               <option value="Азербайджан">Азербайджан</option>
@@ -1387,18 +1385,22 @@
               <option value="Бельгия">Бельгия</option>
             </select>
 
-            <input type="date" name="">
+            <label for=""></label>
+            <input type="date" name="date" required>
 
+            <label for=""></label>
+            <input type="number" name="nights" min="1" max="31" class="pyat" required>
 
-            <div class="row">
-              <input type="number" min="1" max="31" id="pyat">
+            <label for=""></label>
+            <input type="number" name="tourists" min="1" max="10" class="pyat" required>
+
+            <div class="form-search-tour-bar-buttom">
+              <button class="reset-btn btn">
+                Найти
+              </button>
             </div>
 
-            <input id="inp" type="number" min="0" max="10">
-
-
           </form>
-          <!-- min="1" max="31" id="day" name="day" value="6" -->
         </div>
       </div>
     </section>
