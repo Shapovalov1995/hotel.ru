@@ -1005,6 +1005,11 @@ img {
   padding-bottom: 45px;
 }
 
+
+
+
+
+
 .form-search-tour-bar-list {
   display: flex;
   align-items: center;
@@ -1027,10 +1032,22 @@ img {
 }
 
 
+input[type="date"] {
+  align-items: center;
+  display: inline-flex;
+  padding-inline-start: 1px;
+  cursor: text;
+  overflow: hidden;
+  padding: 0px;
+}
+
 input {
   outline: none !important;
-  /* border: 0; */
+  border: 0;
+
 }
+
+
 
 select {
   padding-right: 26px;
@@ -1044,22 +1061,13 @@ select {
 }
 
 
-.form-search-tour-bar-input,
-.form-search-tour-bar-input,
-.form-search-tour-bar-input,
-.form-search-tour-bar-input,
-.form-search-tour-bar-input {
-  display: flex;
-  flex-direction: column;
-}
+
 
 /* search-tour style strat *********************************************************/
 
-/* label[for=city_1] {
-  margin-left: 14px;
-} */
 
-.form-search-tour-bar-list-input-city_title {
+
+/* .form-search-tour-bar-list-input-city_title {
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
@@ -1112,7 +1120,7 @@ select {
   color: #000000;
   padding-left: 4px;
   padding-bottom: 12px
-}
+} */
 
 
 /* search-tour end *********************************************************/
