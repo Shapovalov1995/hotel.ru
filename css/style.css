@@ -984,21 +984,47 @@ img {
   padding-bottom: 70px;
 }
 
+.search-tour-background {
+  background: #E9E9E9;
+  border-radius: 16px;
+}
+
 .search-tour-title {
   padding-top: 46px;
   padding-left: 40px;
 }
 
-.search-tour-bar {
-  /* display: flex; */
+.form-search-tour-bar-list {
+  display: flex;
+
 }
 
-/* input[type="number"] {
-  height: 26px;
-  line-height: 26px;
-  width: 100%;
-  text-indent: 6px;
+.form-search-tour-bar-list-input:not(:last-child) {
+  margin-right: 41px;
+}
+
+/* .search-tour-bar {
+  display: flex;
+  background-color: #FFFFFF;
 } */
+
+input[type="number"] {
+
+  width: 200px;
+}
+
+
+/* input {
+  border: 0px;
+  background: transparent;
+  background-color: white;
+  border-bottom: 1px solid #E9E9E9;
+} */
+
+select {
+  border: 0px;
+  outline: 0px;
+}
 
 
 .form-search-tour-bar {
@@ -1007,9 +1033,10 @@ img {
 }
 
 
-.form-search-tour-bar-nights,
-.form-search-tour-bar-tourists {
-  width: 200px;
+
+.form-search-tour-bar-list-input {
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -1018,31 +1045,18 @@ img {
 }
 
 
-.form-search-tour-bar-city {
+.form-search-tour-bar-reset {
+  border: 0px
+}
+
+.form-search-tour-bar-input,
+.form-search-tour-bar-input,
+.form-search-tour-bar-input,
+.form-search-tour-bar-input,
+.form-search-tour-bar-input {
   display: flex;
   flex-direction: column;
 }
-
-.form-search-tour-bar-country {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-search-tour-bar-date {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-search-tour-bar-nights {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-search-tour-bar-tourists {
-  display: flex;
-  flex-direction: column;
-}
-
 
 
 /* search-tour end *********************************************************/
