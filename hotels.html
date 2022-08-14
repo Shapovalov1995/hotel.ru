@@ -531,14 +531,6 @@
               </div>
 
               <article class="reset-list location-list-card_rating">
-                <a href="#!" class="location-list-card-card_rating-decor-linkstar">
-
-
-
-
-
-
-                </a>
                 <div class="location-list-card-card_rating-decor">
                   <svg class="+" width="14" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#a)">
@@ -1360,7 +1352,11 @@
           <ul class="reset-list form-search-tour-bar-list">
 
             <li class="form-search-tour-bar-list-input">
-              <label for="city_1">Город</label>
+              <label for="city_1">
+                <p class="form-search-tour-bar-list-input-city_title">
+                  Город вылета
+                </p>
+              </label>
               <select name="city" id="city_1">
                 <option value="Санкт-Петербург">Санкт-Петербург</option>
                 <option value="Саранск">Саранск</option>
@@ -1375,7 +1371,11 @@
             </li>
 
             <li class="form-search-tour-bar-list-input">
-              <label for="country_1">Страна </label>
+              <label for="country_1">
+                <p class="form-search-tour-bar-list-input-country_title">
+                  Страна
+                </p>
+              </label>
               <select name="country" id="country_1">
                 <option value="Австралия">Австралия</option>
                 <option value="Австрия">Австрия</option>
@@ -1390,17 +1390,29 @@
             </li>
 
             <li class="form-search-tour-bar-list-input">
-              <label for="date_1">Дата прибытия </label>
+              <label for="date_1">
+                <p class="form-search-tour-bar-list-input-date_title">
+                  Дата прибытия
+                </p>
+              </label>
               <input type="date" name="date" id="date_1" required>
             </li>
 
             <li class="form-search-tour-bar-list-input form-search-tour-bar-list-input-nights">
-              <label for="number_1">Ночей </label>
+              <label for="number_1">
+                <p class="form-search-tour-bar-list-input-nights_title">
+                  Ночей
+                </p>
+              </label>
               <input type="number" name="nights" min="6" max="31" class="pyat" id="number_1" required>
             </li>
 
             <li class="form-search-tour-bar-list-input form-search-tour-bar-list-input-tourists">
-              <label for="number_2">Туристы</label>
+              <label for="number_2">
+                <p class="form-search-tour-bar-list-input-tourists_title">
+                  Туристы
+                </p>
+              </label>
               <input type="number" name="tourists" min="1" max="10" class="pyat" id="number_2" required>
             </li>
 

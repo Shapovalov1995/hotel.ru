@@ -962,7 +962,6 @@ img {
 
 /* location btn start *********************************************************/
 .btn {
-
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
@@ -972,6 +971,10 @@ img {
   border: 1px solid #CC9933;
   border-radius: 10px;
   padding: 11px 20px;
+
+}
+
+.btn-location-list-card {
   margin-bottom: 45px;
 }
 
@@ -1003,6 +1006,10 @@ img {
   margin-right: 41px;
 }
 
+.form-search-tour-bar-buttom {
+  margin-left: 51px;
+}
+
 /* .search-tour-bar {
   display: flex;
   background-color: #FFFFFF;
@@ -1029,6 +1036,9 @@ select {
 
 .form-search-tour-bar {
   display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 16px;
 
 }
 
