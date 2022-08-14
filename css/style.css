@@ -984,26 +984,14 @@ img {
   padding-bottom: 70px;
 }
 
-.search-tour-bar {
-  display: flex;
-}
-
-
 .search-tour-title {
   padding-top: 46px;
   padding-left: 40px;
 }
 
-.form-search-tour-bar {
+.search-tour-bar {
   /* display: flex; */
 }
-
-
-.form-search-tour-bar-nigts,
-.form-search-tour-bar-tourists {
-  width: 200px;
-}
-
 
 /* input[type="number"] {
   height: 26px;
@@ -1011,6 +999,18 @@ img {
   width: 100%;
   text-indent: 6px;
 } */
+
+
+.form-search-tour-bar {
+  display: flex;
+
+}
+
+
+.form-search-tour-bar-nights,
+.form-search-tour-bar-tourists {
+  width: 200px;
+}
 
 
 .pyat::-webkit-inner-spin-button {
@@ -1033,6 +1033,15 @@ img {
   flex-direction: column;
 }
 
+.form-search-tour-bar-nights {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-search-tour-bar-tourists {
+  display: flex;
+  flex-direction: column;
+}
 
 
 

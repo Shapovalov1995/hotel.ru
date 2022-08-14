@@ -1358,41 +1358,51 @@
 
           <form class="form-search-tour-bar" action="https://jsonplaceholder.typicode.com/posts" method="post">
 
-            <label for=""></label>
-            <select name="city">
-              <option value="Санкт-Петербург">Санкт-Петербург</option>
-              <option value="Саранск">Саранск</option>
-              <option value="Севастополь">Севастополь</option>
-              <option value="Северодвинск">Северодвинск</option>
-              <option value="Симферополь">Симферополь</option>
-              <option value="Сочи">Сочи</option>
-              <option value="Ставрополь">Ставрополь</option>
-              <option value="Сызрань">Сызрань</option>
-              <option value="Сыктывкар">Сыктывкар</option>
-            </select>
+            <div class="form-search-tour-bar-city">
+              <label for="city_1">Город</label>
+              <select name="city" id="city_1">
+                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                <option value="Саранск">Саранск</option>
+                <option value="Севастополь">Севастополь</option>
+                <option value="Северодвинск">Северодвинск</option>
+                <option value="Симферополь">Симферополь</option>
+                <option value="Сочи">Сочи</option>
+                <option value="Ставрополь">Ставрополь</option>
+                <option value="Сызрань">Сызрань</option>
+                <option value="Сыктывкар">Сыктывкар</option>
+              </select>
+            </div>
 
+            <div class="form-search-tour-bar-country">
+              <label for="country_1">Страна </label>
+              <select name="country" id="country_1">
+                <option value="Австралия">Австралия</option>
+                <option value="Австрия">Австрия</option>
+                <option value="Азербайджан">Азербайджан</option>
+                <option value="Албания">Албания</option>
+                <option value="Англия">Англия</option>
+                <option value="Аргентина">Аргентина</option>
+                <option value="Армения">Армения</option>
+                <option value="Белоруссия">Белоруссия</option>
+                <option value="Бельгия">Бельгия</option>
+              </select>
+            </div>
 
-            <label for=""></label>
-            <select name="country">
-              <option value="Австралия">Австралия</option>
-              <option value="Австрия">Австрия</option>
-              <option value="Азербайджан">Азербайджан</option>
-              <option value="Албания">Албания</option>
-              <option value="Англия">Англия</option>
-              <option value="Аргентина">Аргентина</option>
-              <option value="Армения">Армения</option>
-              <option value="Белоруссия">Белоруссия</option>
-              <option value="Бельгия">Бельгия</option>
-            </select>
+            <div class="form-search-tour-bar-date">
+              <label for="date_1">Дата прибытия </label>
+              <input type="date" name="date" id="date_1" required>
+            </div>
 
-            <label for=""></label>
-            <input type="date" name="date" required>
+            <div class="form-search-tour-bar-nights">
+              <label for="number_1">Ночей </label>
+              <input type="number" name="nights" min="6" max="31" class="pyat" id="number_1" required>
 
-            <label for=""></label>
-            <input type="number" name="nights" min="1" max="31" class="pyat" required>
+            </div>
 
-            <label for=""></label>
-            <input type="number" name="tourists" min="1" max="10" class="pyat" required>
+            <div class="form-search-tour-bar-tourists">
+              <label for="number_2">Туристы</label>
+              <input type="number" name="tourists" min="1" max="10" class="pyat" id="number_2" required>
+            </div>
 
             <div class="form-search-tour-bar-buttom">
               <button class="reset-btn btn">
