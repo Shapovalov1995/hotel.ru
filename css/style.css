@@ -961,7 +961,7 @@ img {
 /* location style end *********************************************************/
 
 /* location btn start *********************************************************/
-.btn {
+.btn-form-search-tour-bar-buttom {
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
@@ -970,7 +970,7 @@ img {
   color: #CC9933;
   border: 1px solid #CC9933;
   border-radius: 10px;
-  padding: 11px 20px;
+  padding: 11px 30px;
 
 }
 
@@ -997,21 +997,18 @@ img {
   padding-left: 40px;
 }
 
-
 .form-search-tour-bar {
   display: flex;
   align-items: center;
   border-radius: 16px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 70px;
   padding-bottom: 45px;
 }
 
 .form-search-tour-bar-list {
   display: flex;
+  align-items: center;
 }
-
-
 
 .form-search-tour-bar-list-input:not(:last-child) {
   margin-right: 41px;
@@ -1029,38 +1026,16 @@ img {
   padding: 16px 16px;
 }
 
-/* .search-tour-bar {
-  display: flex;
-  background-color: #FFFFFF;
-} */
 
-input[type="number"] {
-
-  width: 200px;
+input {
+  outline: none !important;
+  /* border: 0; */
 }
-
-
-/* input {
-  border: 0px;
-  background: transparent;
-  background-color: white;
-  border-bottom: 1px solid #E9E9E9;
-} */
 
 select {
+  padding-right: 26px;
   border: 0px;
   outline: 0px;
-}
-
-
-
-
-
-
-
-.form-search-tour-bar-list-input {
-  display: flex;
-  flex-direction: column;
 }
 
 
@@ -1069,10 +1044,6 @@ select {
 }
 
 
-.form-search-tour-bar-reset {
-  border: 0px
-}
-
 .form-search-tour-bar-input,
 .form-search-tour-bar-input,
 .form-search-tour-bar-input,
@@ -1080,6 +1051,67 @@ select {
 .form-search-tour-bar-input {
   display: flex;
   flex-direction: column;
+}
+
+/* search-tour style strat *********************************************************/
+
+/* label[for=city_1] {
+  margin-left: 14px;
+} */
+
+.form-search-tour-bar-list-input-city_title {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+  padding-left: 4px;
+  padding-bottom: 12px
+}
+
+.form-search-tour-bar-list-input-country_title {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+  padding-left: 3px;
+  padding-bottom: 12px
+}
+
+.form-search-tour-bar-list-input-date_title {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+  padding-left: 4px;
+  padding-bottom: 12px
+}
+
+.form-search-tour-bar-list-input-nights_title {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+  padding-left: 4px;
+  padding-bottom: 12px
+}
+
+.form-search-tour-bar-list-input-tourists_title {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+  padding-left: 4px;
+  padding-bottom: 12px
 }
 
 
