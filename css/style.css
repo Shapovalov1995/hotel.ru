@@ -997,10 +997,21 @@ img {
   padding-left: 40px;
 }
 
+
+.form-search-tour-bar {
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 45px;
+}
+
 .form-search-tour-bar-list {
   display: flex;
-
 }
+
+
 
 .form-search-tour-bar-list-input:not(:last-child) {
   margin-right: 41px;
@@ -1008,6 +1019,14 @@ img {
 
 .form-search-tour-bar-buttom {
   margin-left: 51px;
+}
+
+.form-search-tour-bar-background {
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 16px 16px;
 }
 
 /* .search-tour-bar {
@@ -1034,13 +1053,8 @@ select {
 }
 
 
-.form-search-tour-bar {
-  display: flex;
-  align-items: center;
-  background-color: white;
-  border-radius: 16px;
 
-}
+
 
 
 
