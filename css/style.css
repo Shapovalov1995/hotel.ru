@@ -961,21 +961,18 @@ img {
 /* location style end *********************************************************/
 
 /* location btn start *********************************************************/
-.btn-form-search-tour-bar-buttom {
+
+
+.btn-location-list-card {
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-
+  margin-bottom: 45px;
   color: #CC9933;
   border: 1px solid #CC9933;
   border-radius: 10px;
-  padding: 11px 30px;
-
-}
-
-.btn-location-list-card {
-  margin-bottom: 45px;
+  padding: 11px 20px;
 }
 
 /* location btn end *********************************************************/
@@ -1006,17 +1003,17 @@ img {
 }
 
 
-
-
-
-
 .form-search-tour-bar-list {
   display: flex;
   align-items: center;
 }
 
+/* .form-search-tour-bar-list-input {
+  display: flex;
+} */
+
 .form-search-tour-bar-list-input:not(:last-child) {
-  margin-right: 41px;
+  margin-right: 33px;
 }
 
 .form-search-tour-bar-buttom {
@@ -1031,35 +1028,90 @@ img {
   padding: 16px 16px;
 }
 
-
-input[type="date"] {
+input[type="date" i] {
   align-items: center;
   display: inline-flex;
   padding-inline-start: 1px;
-  cursor: text;
+  cursor: default;
   overflow: hidden;
   padding: 0px;
+  letter-spacing: -1px;
+  width: 123px;
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
 }
+
+.number {
+  width: 200px;
+}
+
 
 input {
+
   outline: none !important;
-  border: 0;
+  border: none;
 
 }
 
-
-
 select {
-  padding-right: 26px;
+  padding-right: 22px;
+  border: 0px;
+  outline: 0px;
+}
+
+.country {
+  padding-right: 49px;
   border: 0px;
   outline: 0px;
 }
 
 
-.pyat::-webkit-inner-spin-button {
+.number-spin-button_1::-webkit-inner-spin-button,
+.number-spin-button_2::-webkit-inner-spin-button {
   opacity: 1;
 }
 
+.number-spin-button_1 {
+  background: transparent;
+  border-bottom: 1px solid #E9E9E9;
+  width: 121px;
+
+}
+
+.number-spin-button_2 {
+  background: transparent;
+  border-bottom: 1px solid #E9E9E9;
+  width: 121px;
+
+}
+
+
+.btn-form-search-tour-bar-buttom {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+
+  color: #CC9933;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  padding: 11px 30px;
+
+}
+
+
+
+/* .form-search-tour-bar-list-input-date_title {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+
+  padding-bottom: 12px
+} */
 
 
 
