@@ -980,6 +980,10 @@ img {
 
 /* search-tour start *********************************************************/
 
+.form-search-tour-bar-list-input {
+  border: 1px solid #f300cf;
+}
+
 .search-tour {
   padding-bottom: 70px;
 }
@@ -1013,7 +1017,7 @@ img {
 } */
 
 .form-search-tour-bar-list-input:not(:last-child) {
-  margin-right: 33px;
+  margin-right: 41px;
 }
 
 .form-search-tour-bar-buttom {
