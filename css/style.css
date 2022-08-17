@@ -981,7 +981,131 @@ img {
 /* search-tour start *********************************************************/
 
 .form-search-tour-bar-list-input {
-  border: 1px solid #f300cf;
+  /* border: 1px solid #f300cf; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-search-tour-bar-list-input-date-margin {
+  margin-left: 4px;
+}
+
+.form-search-tour-bar-list-input-number_1-margin {
+  margin-left: 6px;
+}
+
+.form-search-tour-bar-list-input-number_2-margin {
+  margin-left: 8px;
+}
+
+
+label {
+
+  /* margin-bottom: 8px; */
+
+}
+
+.country {
+  padding-right: 48px;
+}
+
+.form-search-tour-bar {
+
+  border-radius: 16px;
+  /* padding-left: 70px; */
+  padding-bottom: 45px;
+}
+
+
+.form-search-tour-bar-background {
+  display: flex;
+
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 16px 28px;
+}
+
+/* label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+} */
+
+
+.form-search-tour-bar-list-input-city-tilte_text,
+.form-search-tour-bar-list-input-country-tilte_text {
+  padding-left: 4px;
+
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+
+  /* margin-bottom: */
+}
+
+.form-search-tour-bar-list-input-date-tilte_text {
+
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+
+  /* margin-bottom: 11px; */
+}
+
+.form-search-tour-bar-list-input:not(:last-child) {
+  margin-right: 33px;
+}
+
+.form-search-tour-bar-buttom {
+  margin-left: 51px;
+}
+
+
+
+input[type="date"] {
+
+  letter-spacing: -1px;
+  width: 123px;
+  color: #000000;
+}
+
+.number_1-text_title,
+.number_2-text_title {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+}
+
+
+select {
+  padding-right: 22px;
+  border: 0px;
+  outline: 0px;
+
+}
+
+
+.number {
+  width: 200px;
+}
+
+
+input {
+  outline: none !important;
+  border: none;
+  /* padding-top: 1px; */
+
 }
 
 .search-tour {
@@ -998,77 +1122,19 @@ img {
   padding-left: 40px;
 }
 
-.form-search-tour-bar {
-  display: flex;
-  align-items: center;
-  border-radius: 16px;
-  padding-left: 70px;
-  padding-bottom: 45px;
-}
 
 
 .form-search-tour-bar-list {
   display: flex;
-  align-items: center;
+  /* align-items: flex-start; */
 }
 
 /* .form-search-tour-bar-list-input {
   display: flex;
 } */
 
-.form-search-tour-bar-list-input:not(:last-child) {
-  margin-right: 41px;
-}
-
-.form-search-tour-bar-buttom {
-  margin-left: 51px;
-}
-
-.form-search-tour-bar-background {
-  display: flex;
-  align-items: center;
-  background-color: #FFFFFF;
-  border-radius: 16px;
-  padding: 16px 16px;
-}
-
-input[type="date" i] {
-  align-items: center;
-  display: inline-flex;
-  padding-inline-start: 1px;
-  cursor: default;
-  overflow: hidden;
-  padding: 0px;
-  letter-spacing: -1px;
-  width: 123px;
-  font-style: normal;
-  font-weight: 400;
-  color: #000000;
-}
-
-.number {
-  width: 200px;
-}
 
 
-input {
-
-  outline: none !important;
-  border: none;
-
-}
-
-select {
-  padding-right: 22px;
-  border: 0px;
-  outline: 0px;
-}
-
-.country {
-  padding-right: 49px;
-  border: 0px;
-  outline: 0px;
-}
 
 
 .number-spin-button_1::-webkit-inner-spin-button,
