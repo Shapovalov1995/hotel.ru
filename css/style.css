@@ -980,11 +980,24 @@ img {
 
 /* search-tour start *********************************************************/
 
+.form-search-tour-bar {
+  /* display: flex; */
+  border-radius: 16px;
+  padding: 45px;
+}
+
+.form-search-tour-bar-background {
+  /* display: flex; */
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 16px 28px;
+}
+
 .form-search-tour-bar-list-input {
-  /* border: 1px solid #f300cf; */
+
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .form-search-tour-bar-list-input-date-margin {
@@ -993,46 +1006,35 @@ img {
 
 .form-search-tour-bar-list-input-number_1-margin {
   margin-left: 6px;
+
 }
 
 .form-search-tour-bar-list-input-number_2-margin {
   margin-left: 8px;
-}
-
-
-label {
-
-  /* margin-bottom: 8px; */
 
 }
 
-.country {
-  padding-right: 48px;
+
+.date_1-title_text {
+
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
 }
 
-.form-search-tour-bar {
 
-  border-radius: 16px;
-  /* padding-left: 70px; */
-  padding-bottom: 45px;
+.number_1-title_text,
+.number_2-title_text {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
 }
-
-
-.form-search-tour-bar-background {
-  display: flex;
-
-  background-color: #FFFFFF;
-  border-radius: 16px;
-  padding: 16px 28px;
-}
-
-/* label {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100%;
-} */
-
 
 .form-search-tour-bar-list-input-city-tilte_text,
 .form-search-tour-bar-list-input-country-tilte_text {
@@ -1048,17 +1050,6 @@ label {
   /* margin-bottom: */
 }
 
-.form-search-tour-bar-list-input-date-tilte_text {
-
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
-  color: #000000;
-
-  /* margin-bottom: 11px; */
-}
 
 .form-search-tour-bar-list-input:not(:last-child) {
   margin-right: 33px;
@@ -1075,16 +1066,14 @@ input[type="date"] {
   letter-spacing: -1px;
   width: 123px;
   color: #000000;
+
 }
 
-.number_1-text_title,
-.number_2-text_title {
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
-  color: #000000;
+
+input {
+  outline: none !important;
+  border: none;
+
 }
 
 
@@ -1095,18 +1084,10 @@ select {
 
 }
 
-
-.number {
-  width: 200px;
+.country {
+  padding-right: 48px;
 }
 
-
-input {
-  outline: none !important;
-  border: none;
-  /* padding-top: 1px; */
-
-}
 
 .search-tour {
   padding-bottom: 70px;
@@ -1115,6 +1096,7 @@ input {
 .search-tour-background {
   background: #E9E9E9;
   border-radius: 16px;
+  padding-bottom: 151px
 }
 
 .search-tour-title {
