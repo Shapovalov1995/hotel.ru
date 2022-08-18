@@ -1173,13 +1173,34 @@ address {
 }
 
 
+.contacts-block {
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+}
+
+.contacts-address {
+  border: 1px solid #CC9933;
+}
 
 
+.decor-contacts {
+  background-image: url(../img/Контакты_офис.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 653px;
+  min-height: 528px;
 
 
+}
 
-
-
+/* .contacts-address-list {
+  display: flex;
+} */
 
 
 /* contacts end *********************************************************/
