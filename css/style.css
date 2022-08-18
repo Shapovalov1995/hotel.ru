@@ -1112,11 +1112,12 @@ select {
   cursor: pointer;
   border: 0px;
   outline: 0px;
+  padding-right: 22px;
 
 }
 
-.country {
-  padding-right: 48px;
+.country_1 {
+  margin-right: 49px;
 }
 
 
@@ -1178,7 +1179,8 @@ address {
   border-radius: 16px;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: flex-start;
 
 }
 
@@ -1195,7 +1197,11 @@ address {
   width: 653px;
   min-height: 528px;
 
+}
 
+.contacts-address-list-item {
+  display: flex;
+  flex-direction: column;
 }
 
 /* .contacts-address-list {
