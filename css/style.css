@@ -980,28 +980,70 @@ img {
 
 /* search-tour start *********************************************************/
 
-.form-search-tour-bar {
-  /* display: flex; */
-  border-radius: 16px;
-  padding: 45px;
+.select-list {
+  color: #333333;
 }
 
-.form-search-tour-bar-background {
-  /* display: flex; */
-  background-color: #FFFFFF;
-  border-radius: 16px;
-  padding: 16px 28px;
+.search-tour {
+  padding-bottom: 70px;
 }
+
+.search-tour-background {
+  background: #E9E9E9;
+  border-radius: 16px;
+  padding-bottom: 45px;
+
+}
+
+.search-tour-background-bar-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.search-tour-title {
+  padding-top: 46px;
+  padding-left: 40px;
+}
+
+.search-tour-background-bar {
+  background-color: white;
+  border-radius: 16px;
+  display: inline-flex;
+}
+
+label {
+  margin-bottom: 12px;
+}
+
+.form-search-tour-bar {
+  display: flex;
+  align-items: center;
+  padding-top: 31px;
+  padding-bottom: 29px;
+}
+
+.form-search-tour-bar-list {
+  display: flex;
+
+  margin-left: 24px;
+}
+
+.form-search-tour-bar-list-input:not(:last-child) {
+  margin-right: 33px;
+}
+
 
 .form-search-tour-bar-list-input {
 
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+  align-items: flex-start;
+
 }
 
 .form-search-tour-bar-list-input-date-margin {
-  margin-left: 4px;
+  margin-left: 5px;
 }
 
 .form-search-tour-bar-list-input-number_1-margin {
@@ -1047,25 +1089,14 @@ img {
   line-height: 12px;
   color: #000000;
 
-  /* margin-bottom: */
 }
-
-
-.form-search-tour-bar-list-input:not(:last-child) {
-  margin-right: 33px;
-}
-
-.form-search-tour-bar-buttom {
-  margin-left: 51px;
-}
-
-
 
 input[type="date"] {
 
   letter-spacing: -1px;
   width: 123px;
   color: #000000;
+  cursor: text;
 
 }
 
@@ -1078,7 +1109,7 @@ input {
 
 
 select {
-  padding-right: 22px;
+  cursor: pointer;
   border: 0px;
   outline: 0px;
 
@@ -1088,28 +1119,6 @@ select {
   padding-right: 48px;
 }
 
-
-.search-tour {
-  padding-bottom: 70px;
-}
-
-.search-tour-background {
-  background: #E9E9E9;
-  border-radius: 16px;
-  padding-bottom: 151px
-}
-
-.search-tour-title {
-  padding-top: 46px;
-  padding-left: 40px;
-}
-
-
-
-.form-search-tour-bar-list {
-  display: flex;
-  /* align-items: flex-start; */
-}
 
 
 .number-spin-button_1::-webkit-inner-spin-button,
@@ -1143,91 +1152,37 @@ select {
   border-radius: 10px;
   padding: 11px 30px;
 
+  margin-left: 51px;
+  margin-right: 27px;
+
 }
-
-
-
-/* .form-search-tour-bar-list-input-date_title {
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
-  color: #000000;
-
-  padding-bottom: 12px
-} */
-
-
-
-/* search-tour style strat *********************************************************/
-
-
-
-/* .form-search-tour-bar-list-input-city_title {
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
-  color: #000000;
-  padding-left: 4px;
-  padding-bottom: 12px
-}
-
-.form-search-tour-bar-list-input-country_title {
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
-  color: #000000;
-  padding-left: 3px;
-  padding-bottom: 12px
-}
-
-.form-search-tour-bar-list-input-date_title {
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
-  color: #000000;
-  padding-left: 4px;
-  padding-bottom: 12px
-}
-
-.form-search-tour-bar-list-input-nights_title {
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
-  color: #000000;
-  padding-left: 4px;
-  padding-bottom: 12px
-}
-
-.form-search-tour-bar-list-input-tourists_title {
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
-  color: #000000;
-  padding-left: 4px;
-  padding-bottom: 12px
-} */
-
 
 /* search-tour end *********************************************************/
+/* contacts start *********************************************************/
+address {
+  all: initial
+}
 
+
+.contacts-title {
+  padding-left: 40px;
+}
 
 .contacts {
   padding-bottom: 40px;
 }
 
 
+
+
+
+
+
+
+
+
+
+/* contacts end *********************************************************/
 .footer {
   padding-bottom: 30px;
 }
