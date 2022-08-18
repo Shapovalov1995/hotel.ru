@@ -1161,7 +1161,7 @@ select {
 /* search-tour end *********************************************************/
 /* contacts start *********************************************************/
 address {
-  all: initial
+  font-style: normal;
 }
 
 
@@ -1179,13 +1179,8 @@ address {
   border-radius: 16px;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-around;
-  align-items: flex-start;
-
-}
-
-.contacts-address {
-  border: 1px solid #CC9933;
+  justify-content: space-between;
+  padding: 45px;
 }
 
 
@@ -1199,9 +1194,21 @@ address {
 
 }
 
+.contacts-address {
+  border: 1px solid #CC9933;
+  /* display: flex; */
+  width: 38%;
+}
+
+.contacts-address-list {
+ /* display: flex; */
+
+}
+
+
 .contacts-address-list-item {
   display: flex;
-  flex-direction: column;
+
 }
 
 
@@ -1217,6 +1224,7 @@ address {
   font-size: 20px;
   line-height: 20px;
   color: #000000;
+
 }
 
 .contacts-address-list-item-caption_description {
@@ -1225,48 +1233,12 @@ address {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  width: 229px;
   color: #000000;
+
+  margin-left: auto;
+
+
 }
-
-
-.contacts-address-list-item-tel_link {
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  color: #CC9933;
-}
-
-.contacts-address-list-item-email_link {
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  color: #CC9933;
-}
-
-.contacts-address-list-item-email_description {
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  color: #999999;
-}
-
-.contacts-address-list-item-caption_description-time {
-  font-family: 'Muller';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  width: 214px;
-  color: #000000;
-}
-
 
 /* contacts style end *********************************************************/
 
