@@ -1204,10 +1204,85 @@ address {
   flex-direction: column;
 }
 
-/* .contacts-address-list {
-  display: flex;
-} */
 
+/* contacts style start *********************************************************/
+
+.contacts-address-list-item-caption_title,
+.contacts-address-list-item-caption_title,
+.contacts-address-list-item-caption_title,
+.contacts-address-list-item-caption_title {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.contacts-address-list-item-caption_description {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  width: 229px;
+  color: #000000;
+}
+
+
+.contacts-address-list-item-tel_link {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+}
+
+.contacts-address-list-item-email_link {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+}
+
+.contacts-address-list-item-email_description {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #999999;
+}
+
+.contacts-address-list-item-caption_description-time {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  width: 214px;
+  color: #000000;
+}
+
+
+/* contacts style end *********************************************************/
+
+/* contacts btn start *********************************************************/
+
+.btn-contacts-address-buttom {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+
+  color: #CC9933;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  padding: 27px 30px;
+}
 
 /* contacts end *********************************************************/
 .footer {
