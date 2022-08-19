@@ -1181,6 +1181,7 @@ address {
   flex-direction: row-reverse;
   justify-content: space-between;
   padding: 45px;
+  /* flex-wrap: wrap; */
 }
 
 
@@ -1196,19 +1197,38 @@ address {
 
 .contacts-address {
   border: 1px solid #CC9933;
-  /* display: flex; */
   width: 38%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  align-content: space-between;
 }
 
 .contacts-address-list {
- /* display: flex; */
-
+  width: -webkit-fill-available;
 }
-
 
 .contacts-address-list-item {
   display: flex;
+  border-bottom: 1px solid #E9E9E9;
+}
 
+.contacts-address-list-item:not(:last-child) {
+  margin-bottom: 77px;
+}
+
+.contacts-address-list-item-tel_link-block {
+  display: grid;
+  margin-left: auto;
+
+}
+
+.contacts-address-list-item-email_link-block {
+  margin-left: auto;
+}
+
+.contacts-address-list-item-caption_description-time {
+  margin-left: auto;
 }
 
 
@@ -1253,7 +1273,10 @@ address {
   color: #CC9933;
   border: 1px solid #CC9933;
   border-radius: 10px;
-  padding: 27px 30px;
+  padding: 25px 29px;
+
+  box-sizing: border-box;
+
 }
 
 /* contacts end *********************************************************/
