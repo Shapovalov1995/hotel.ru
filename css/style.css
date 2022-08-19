@@ -1334,18 +1334,18 @@ address {
 /* footer start *********************************************************/
 
 .footer {
-
-  color: #FFFFFF;
+  padding-bottom: 30px;
 }
 
 
 .footer-background {
   background-color: #333333;
   border-radius: 16px;
-  padding: 45px;
+  padding: 42px;
 
 
   display: flex;
+  align-items: flex-start;
 }
 
 .footer-left {
@@ -1412,6 +1412,16 @@ address {
   font-size: 16px;
   line-height: 150%;
   color: #CC9933;
+}
+
+.decor-footer-logo {
+
+  background-image: url(../img/footer-logo.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom;
+  background-position-x: 80%;
+
 }
 
 /* footer style left end *********************************************************/

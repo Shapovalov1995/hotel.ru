@@ -1,6 +1,7 @@
 # hotel.ru
 
 git push --set-upstream origin dev
+https://jakearchibald.github.io/svgomg/
 
 Вёрстка
 
