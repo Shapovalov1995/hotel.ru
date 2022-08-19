@@ -1341,7 +1341,6 @@ address {
   background-color: #333333;
   border-radius: 16px;
   padding: 42px;
-
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
