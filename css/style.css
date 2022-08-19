@@ -1227,6 +1227,7 @@ address {
 
 .contacts-address-list-item-tel_link-block {
   display: grid;
+  justify-items: start;
 
 }
 
@@ -1358,9 +1359,23 @@ address {
   flex-direction: column;
 }
 
+.footer-right-item-tel {
+  display: grid;
+  justify-items: start;
+}
+
+.footer-right-item-email {
+  display: grid;
+  justify-items: start;
+}
+
 
 .footer-left-item:not(:last-child) {
   margin-bottom: 40px;
+}
+
+.footer-right-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 /* footer style left start *********************************************************/
@@ -1411,7 +1426,25 @@ address {
   color: #FFFFFF;
 }
 
+.footer-right-item-tel_link-1,
+.footer-right-item-tel_link-2 {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+}
 
+.footer-right-item-email_link-1,
+.footer-right-item-email_link-2 {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+}
 
 
 /* footer end *********************************************************/
