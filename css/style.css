@@ -1334,7 +1334,7 @@ address {
 /* footer start *********************************************************/
 
 .footer {
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 
@@ -1343,8 +1343,8 @@ address {
   border-radius: 16px;
   padding: 42px;
 
-
   display: flex;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
@@ -1357,6 +1357,7 @@ address {
 .footer-right {
   display: flex;
   flex-direction: column;
+  margin-right: 14%;
 }
 
 .footer-right-item-tel {
@@ -1376,6 +1377,12 @@ address {
 
 .footer-right-item:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.decor-footer-social-list-item {}
+
+.decor-footer-social-list-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 /* footer style left start *********************************************************/
