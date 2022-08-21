@@ -150,6 +150,7 @@ body {
   background-color: #F1F1F1;
   cursor: default;
 
+
 }
 
 .word-break_word {
@@ -223,6 +224,45 @@ img {
 /* global end********************************************************/
 
 /* Header start ********************************************************/
+:root {
+  --header-link-color: #666666;
+  --hover-a-color: #CC9933;
+  --active-a-color: #A47312;
+}
+
+/* hover start ********************************************************/
+
+
+.header-top-login_account_link:hover {
+  color: #E9C479;
+  background-image: url(../img/personal_account_arrow-hover.svg);
+}
+
+.header-top-login_account_link:active {
+  color: #A47312;
+  background-image: url(../img/personal_account_arrow-active.svg);
+}
+
+.offers-list-banner-block_text-detailed_link {
+  stroke: #FFCC66;
+}
+
+.offers-list-banner-block_text-detailed_link:hover {
+  color: #CC9933;
+  stroke: #CC9933;
+}
+
+.offers-list-banner-block_text-detailed_link:active {
+  color: #A47312;
+  stroke: #A47312;
+}
+
+
+
+/* hover end ********************************************************/
+
+
+
 .header {
   padding: 30px 0 71px 0;
 }
@@ -253,29 +293,29 @@ img {
   font-size: 20px;
   line-height: 20px;
   color: #666666;
+
 }
+
 
 
 
 .header-top-login_account_link {
+
+  background-image: url(../img/personal_account_arrow-default.svg);
+  background-repeat: no-repeat;
+  background-position-y: 1px;
+
+  padding-left: 28px;
   padding-top: 1px;
   margin-left: auto;
-  display: flex;
-  align-items: center;
-}
 
-.svg-header-top-login_account_link {
-  margin-bottom: 2px;
-}
-
-.header-top-login_account_link-text {
-  margin-left: 5px;
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   color: #CC9933;
+
 }
 
 
@@ -307,13 +347,13 @@ img {
   margin-right: 45px;
 }
 
-.header-navigation-title-list-item {
+.header-navigation-title-list-item_link {
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #666666;
+  color: var(--header-link-color);
 }
 
 
@@ -486,13 +526,6 @@ img {
   display: flex;
   align-items: center;
   margin-bottom: 39px;
-
-}
-
-.offers-list-banner-block_text-detailed_link-text {
-
-  margin-right: 6px;
-
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
@@ -500,6 +533,14 @@ img {
   line-height: 16px;
   color: #F0BF5F;
 }
+
+
+.decor-detailed_link {
+  margin-left: 6px;
+}
+
+
+
 
 /* style link end ********************************************************/
 
@@ -616,17 +657,10 @@ img {
 /* services-block end *********************************************************/
 
 
-.services-list-item-title_link {
-
-  display: flex;
-  align-items: center;
-  margin-bottom: 7px;
-
-
-}
 
 .services-svg {
   margin-bottom: 3px;
+  margin-left: 8px;
 }
 
 /* services-block end *********************************************************/
@@ -635,7 +669,11 @@ img {
 /* services style start  *********************************************************/
 
 
-.services-list-item-title_link-text {
+.services-list-item-title_link {
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
 
   margin-right: 8px;
   font-family: 'Muller';
@@ -657,6 +695,7 @@ img {
   font-size: 16px;
   line-height: 200%;
   color: #000000;
+
 
 }
 
@@ -1273,7 +1312,7 @@ address {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #CC9933;
+  color: #F0BF5F;
 }
 
 
@@ -1284,7 +1323,7 @@ address {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #CC9933;
+  color: #F0BF5F;
 }
 
 .contacts-address-list-item-email_description-1,
@@ -1411,7 +1450,7 @@ address {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #CC9933;
+  color: #F0BF5F;
 }
 
 .decor-footer-logo {
@@ -1443,7 +1482,7 @@ address {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #CC9933;
+  color: #F0BF5F;
 }
 
 .footer-right-item-email_link-1,
@@ -1453,7 +1492,7 @@ address {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #CC9933;
+  color: #F0BF5F;
 }
 
 
