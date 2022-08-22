@@ -298,7 +298,7 @@ img {
 
 
 :focus-visible {
-  outline: 1px solid #CC9933;
+  /* outline: 1px solid #CC9933; */
 
 
 }
@@ -328,6 +328,30 @@ img {
   outline: 1px solid #CC9933;
   color: #CC9933;
 }
+
+
+.offers-list-banner:focus-visible,
+.offers-list-banner-luxe:focus-visible {
+  outline: 1px solid #CC9933;
+}
+
+/*services-list-item***/
+
+.services-list-item:focus-visible {
+  outline: 1px solid #CC9933;
+}
+
+
+/*location-list-card***/
+.location-list-card-detailed_link:focus-visible {
+  outline: 1px solid #E9C479;
+  color: #E9C479;
+  stroke: #E9C479;
+}
+
+/*svg-footer-social***/
+.svg-footer-social-list-item-lagoona:active>path {}
+
 
 /* focus-visible end*******************************************************/
 
@@ -434,17 +458,19 @@ img {
   color: #A47312;
 }
 
-/* .decor-footer-social-list-item-lagoona:hover,
-.decor-footer-social-list-item-ok:hover,
-.decor-footer-social-list-item-vk:hover {
+
+
+
+.decor-footer-social-list-item-lagoona:focus-visible {
+  outline: 1px solid #E9C479;
   fill: #CC9933;
 }
 
-.decor-footer-social-list-item-lagoona:active,
-.decor-footer-social-list-item-ok:active,
-.decor-footer-social-list-item-vk:active {
-  fill: #A47312;
-} */
+.svg-footer-social-list-item-lagoona:focus-visible>path
+{
+fill: #CC9933;
+}
+
 
 
 .svg-footer-social-list-item-lagoona:hover>path,
