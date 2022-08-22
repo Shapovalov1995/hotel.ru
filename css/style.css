@@ -297,11 +297,6 @@ img {
 
 
 
-:focus-visible {
-  /* outline: 1px solid #CC9933; */
-
-
-}
 
 /*contact***/
 
@@ -351,6 +346,17 @@ img {
 
 /*svg-footer-social***/
 .svg-footer-social-list-item-lagoona:active>path {}
+
+
+/*contacts-address-list-item-tel_link***/
+
+.contacts-address-list-item-tel_link-1:focus-visible,
+.contacts-address-list-item-tel_link-2:focus-visible,
+.contacts-address-list-item-email_link-1:focus-visible,
+.contacts-address-list-item-email_link-2:focus-visible {
+  outline: 1px solid #E9C479;
+  color: #E9C479;
+}
 
 
 /* focus-visible end*******************************************************/
@@ -461,17 +467,10 @@ img {
 
 
 
-.decor-footer-social-list-item-lagoona:focus-visible {
-  outline: 1px solid #E9C479;
+
+.decor-footer-social-list-item-lagoona:focus-visible>svg>path {
   fill: #CC9933;
 }
-
-.svg-footer-social-list-item-lagoona:focus-visible>path
-{
-fill: #CC9933;
-}
-
-
 
 .svg-footer-social-list-item-lagoona:hover>path,
 .svg-footer-social-list-item-ok:hover>path,
