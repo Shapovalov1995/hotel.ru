@@ -395,7 +395,7 @@ input {
 select:focus-visible,
 input:focus-visible {
   border: none;
-  outline: 1px solid #FFCC66;
+  outline: 1px solid #F1F1F1;
 
 
 }
