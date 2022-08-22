@@ -5,134 +5,177 @@
 /* global start *********************************************************/
 /* Шрифты для hotel.ru *********************************************************/
 
+#toTop {
+  position: fixed;
+  display: inline-block;
+  bottom: 30px;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  z-index: 1000;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  background: #e9c379;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+#toTop:hover {
+  background: #CC9933;
+}
+#toTop:active {
+  background: #a47312;
+}
+
+#toTop svg {
+  position: relative;
+  top: 12px;
+  right: -1px;
+  fill: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+#toTop:hover svg {
+  cursor: pointer;
+  fill: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+#toTop.show {
+  opacity: 1;
+  visibility: visible;
+  right: calc(2%);
+}
 
 /* Hairline *********************************************************/
 @font-face {
-  font-family: 'Muller Hairline';
-  src: url('../fonts/MullerHairline.eot');
-  src: local('Muller Hairline'), local('MullerHairline'),
-    url('../fonts/MullerHairline.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/MullerHairline.woff2') format('woff2'),
-    url('../fonts/MullerHairline.woff') format('woff'),
-    url('../fonts/MullerHairline.ttf') format('truetype');
+  font-family: "Muller Hairline";
+  src: url("../fonts/MullerHairline.eot");
+  src: local("Muller Hairline"), local("MullerHairline"),
+    url("../fonts/MullerHairline.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MullerHairline.woff2") format("woff2"),
+    url("../fonts/MullerHairline.woff") format("woff"),
+    url("../fonts/MullerHairline.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
 
 /* Thin ********************************************************/
 @font-face {
-  font-family: 'Muller';
-  src: url('../fonts/MullerThin.eot');
-  src: local('Muller Thin'), local('MullerThin'),
-    url('../fonts/MullerThin.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/MullerThin.woff2') format('woff2'),
-    url('../fonts/MullerThin.woff') format('woff'),
-    url('../fonts/MullerThin.ttf') format('truetype');
+  font-family: "Muller";
+  src: url("../fonts/MullerThin.eot");
+  src: local("Muller Thin"), local("MullerThin"),
+    url("../fonts/MullerThin.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MullerThin.woff2") format("woff2"),
+    url("../fonts/MullerThin.woff") format("woff"),
+    url("../fonts/MullerThin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
 
 /* UltraLight *********************************************************/
 @font-face {
-  font-family: 'Muller';
-  src: url('../fonts/MullerUltraLight.eot');
-  src: local('Muller UltraLight'), local('MullerUltraLight'),
-    url('../fonts/MullerUltraLight.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/MullerUltraLight.woff2') format('woff2'),
-    url('../fonts/MullerUltraLight.woff') format('woff'),
-    url('../fonts/MullerUltraLight.ttf') format('truetype');
+  font-family: "Muller";
+  src: url("../fonts/MullerUltraLight.eot");
+  src: local("Muller UltraLight"), local("MullerUltraLight"),
+    url("../fonts/MullerUltraLight.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MullerUltraLight.woff2") format("woff2"),
+    url("../fonts/MullerUltraLight.woff") format("woff"),
+    url("../fonts/MullerUltraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
 
 /* Light ********************************************************/
 @font-face {
-  font-family: 'Muller';
-  src: url('../fonts/MullerLight.eot');
-  src: local('Muller Light'), local('MullerLight'),
-    url('../fonts/MullerLight.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/MullerLight.woff2') format('woff2'),
-    url('../fonts/MullerLight.woff') format('woff'),
-    url('../fonts/MullerLight.ttf') format('truetype');
+  font-family: "Muller";
+  src: url("../fonts/MullerLight.eot");
+  src: local("Muller Light"), local("MullerLight"),
+    url("../fonts/MullerLight.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MullerLight.woff2") format("woff2"),
+    url("../fonts/MullerLight.woff") format("woff"),
+    url("../fonts/MullerLight.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 /* Regular ********************************************************/
 @font-face {
-  font-family: 'Muller';
-  src: url('../fonts/MullerRegular.eot');
-  src: local('Muller Regular'), local('MullerRegular'),
-    url('../fonts/MullerRegular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/MullerRegular.woff2') format('woff2'),
-    url('../fonts/MullerRegular.woff') format('woff'),
-    url('../fonts/MullerRegular.ttf') format('truetype');
+  font-family: "Muller";
+  src: url("../fonts/MullerRegular.eot");
+  src: local("Muller Regular"), local("MullerRegular"),
+    url("../fonts/MullerRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MullerRegular.woff2") format("woff2"),
+    url("../fonts/MullerRegular.woff") format("woff"),
+    url("../fonts/MullerRegular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 /* Medium ********************************************************/
 @font-face {
-  font-family: 'Muller';
-  src: url('../fonts/MullerMedium.eot');
-  src: local('Muller Medium'), local('MullerMedium'),
-    url('../fonts/MullerMedium.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/MullerMedium.woff2') format('woff2'),
-    url('../fonts/MullerMedium.woff') format('woff'),
-    url('../fonts/MullerMedium.ttf') format('truetype');
+  font-family: "Muller";
+  src: url("../fonts/MullerMedium.eot");
+  src: local("Muller Medium"), local("MullerMedium"),
+    url("../fonts/MullerMedium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MullerMedium.woff2") format("woff2"),
+    url("../fonts/MullerMedium.woff") format("woff"),
+    url("../fonts/MullerMedium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 /* Bold ********************************************************/
 @font-face {
-  font-family: 'Muller';
-  src: url('../fonts/MullerBold.eot');
-  src: local('Muller Bold'), local('MullerBold'),
-    url('../fonts/MullerBold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/MullerBold.woff2') format('woff2'),
-    url('../fonts/MullerBold.woff') format('woff'),
-    url('../fonts/MullerBold.ttf') format('truetype');
+  font-family: "Muller";
+  src: url("../fonts/MullerBold.eot");
+  src: local("Muller Bold"), local("MullerBold"),
+    url("../fonts/MullerBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MullerBold.woff2") format("woff2"),
+    url("../fonts/MullerBold.woff") format("woff"),
+    url("../fonts/MullerBold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 /* ExtraBold ********************************************************/
 @font-face {
-  font-family: 'Muller';
-  src: url('../fonts/MullerExtraBold.eot');
-  src: local('Muller ExtraBold'), local('MullerExtraBold'),
-    url('../fonts/MullerExtraBold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/MullerExtraBold.woff2') format('woff2'),
-    url('../fonts/MullerExtraBold.woff') format('woff'),
-    url('../fonts/MullerExtraBold.ttf') format('truetype');
+  font-family: "Muller";
+  src: url("../fonts/MullerExtraBold.eot");
+  src: local("Muller ExtraBold"), local("MullerExtraBold"),
+    url("../fonts/MullerExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MullerExtraBold.woff2") format("woff2"),
+    url("../fonts/MullerExtraBold.woff") format("woff"),
+    url("../fonts/MullerExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
 }
 
-
 /* Black ********************************************************/
 @font-face {
-  font-family: 'Muller';
-  src: url('../fonts/MullerBlack.eot');
-  src: local('Muller Black'), local('MullerBlack'),
-    url('../fonts/MullerBlack.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/MullerBlack.woff2') format('woff2'),
-    url('../fonts/MullerBlack.woff') format('woff'),
-    url('../fonts/MullerBlack.ttf') format('truetype');
+  font-family: "Muller";
+  src: url("../fonts/MullerBlack.eot");
+  src: local("Muller Black"), local("MullerBlack"),
+    url("../fonts/MullerBlack.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MullerBlack.woff2") format("woff2"),
+    url("../fonts/MullerBlack.woff") format("woff"),
+    url("../fonts/MullerBlack.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
 
 /* Heavy ********************************************************/
 @font-face {
-  font-family: 'Muller';
-  src: url('../fonts/MullerHeavy.eot');
-  src: local('Muller Heavy'), local('MullerHeavy'),
-    url('../fonts/MullerHeavy.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/MullerHeavy.woff2') format('woff2'),
-    url('../fonts/MullerHeavy.woff') format('woff'),
-    url('../fonts/MullerHeavy.ttf') format('truetype');
+  font-family: "Muller";
+  src: url("../fonts/MullerHeavy.eot");
+  src: local("Muller Heavy"), local("MullerHeavy"),
+    url("../fonts/MullerHeavy.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MullerHeavy.woff2") format("woff2"),
+    url("../fonts/MullerHeavy.woff") format("woff"),
+    url("../fonts/MullerHeavy.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
@@ -149,11 +192,9 @@ html {
 
 body {
   min-width: 1200px;
-  font-family: 'Muller', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #F1F1F1;
+  font-family: "Muller", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f1f1f1;
   cursor: default;
-
-
 }
 
 .word-break_word {
@@ -181,15 +222,13 @@ p {
 
 h1,
 h2 {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   color: #333333;
 }
-
-
 
 .reset-list {
   margin: 0;
@@ -206,17 +245,13 @@ h2 {
 
 .flex {
   display: flex;
-
 }
 
 .container {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-
 }
-
-
 
 img {
   max-width: 100%;
@@ -229,8 +264,8 @@ img {
 /* Header start ********************************************************/
 :root {
   --header-link-color: #666666;
-  --hover-a-color: #CC9933;
-  --active-a-color: #A47312;
+  --hover-a-color: #cc9933;
+  --active-a-color: #a47312;
 }
 
 /* hover start ********************************************************/
@@ -262,13 +297,12 @@ img {
   }
 }
 
-
 .btn:hover {
   animation-name: btn;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
-  background-color: #CC9933;
+  background-color: #cc9933;
   color: white;
 }
 
@@ -278,79 +312,70 @@ img {
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
-  background-color: #CC9933;
+  background-color: #cc9933;
   color: white;
 }
-
 
 .btn:active {
   animation-name: btn;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
-  background-color: #A47312;
+  background-color: #a47312;
   color: white;
 }
 
 /* hover btn end ********************************************************/
 
-
-
 /* focus-visible start*******************************************************/
 
 .header-top-block-logo_contact-logo_link:focus-visible {
-  outline: 1px solid #CC9933;
+  outline: 1px solid #cc9933;
 }
 
 /*contact***/
 
 .header-top-block-logo_contact-contact_link:focus-visible {
-
-  outline: 1px solid #CC9933;
-  color: #CC9933;
-
+  outline: 1px solid #cc9933;
+  color: #cc9933;
 }
 
 /*login_account***/
 
-
 .header-top-login_account_link:focus-visible {
   background-image: url(../img/personal_account_arrow-default.svg);
-  outline: 1px solid #CC9933;
-  color: #CC9933;
-
+  outline: 1px solid #cc9933;
+  color: #cc9933;
 }
 
 /*navigation***/
 
 .header-navigation-title-list-item_link:focus-visible {
-  outline: 1px solid #CC9933;
-  color: #CC9933;
+  outline: 1px solid #cc9933;
+  color: #cc9933;
 }
-
 
 .offers-list-banner:focus-visible,
 .offers-list-banner-luxe:focus-visible {
-  outline: 1px solid #CC9933;
+  outline: 1px solid #cc9933;
 }
 
 /*services-list-item***/
 
 .services-list-item:focus-visible {
-  outline: 1px solid #CC9933;
+  outline: 1px solid #cc9933;
 }
-
 
 /*location-list-card***/
 .location-list-card-detailed_link:focus-visible {
-  outline: 1px solid #E9C479;
-  color: #E9C479;
-  stroke: #E9C479;
+  outline: 1px solid #e9c479;
+  color: #e9c479;
+  stroke: #e9c479;
 }
 
 /*svg-footer-social***/
-.svg-footer-social-list-item-lagoona:active>path {}
-
+.svg-footer-social-list-item-lagoona:active > path {
+}
 
 /*contacts-address-list-item-tel_link***/
 
@@ -358,16 +383,15 @@ img {
 .contacts-address-list-item-tel_link-2:focus-visible,
 .contacts-address-list-item-email_link-1:focus-visible,
 .contacts-address-list-item-email_link-2:focus-visible {
-  outline: 1px solid #E9C479;
-  color: #E9C479;
+  outline: 1px solid #e9c479;
+  color: #e9c479;
 }
 
-.decor-footer-social-list-item-lagoona:focus-visible>svg>path,
-.decor-footer-social-list-item-ok:focus-visible>svg>path,
-.decor-footer-social-list-item-vk:focus-visible>svg>path {
-  fill: #CC9933;
+.decor-footer-social-list-item-lagoona:focus-visible > svg > path,
+.decor-footer-social-list-item-ok:focus-visible > svg > path,
+.decor-footer-social-list-item-vk:focus-visible > svg > path {
+  fill: #cc9933;
 }
-
 
 /*footer***/
 
@@ -376,11 +400,9 @@ img {
 .footer-right-item-tel_link-2:focus-visible,
 .footer-right-item-email_link-1:focus-visible,
 .footer-right-item-email_link-2:focus-visible {
-  outline: 1px solid #E9C479;
-  color: #E9C479;
+  outline: 1px solid #e9c479;
+  color: #e9c479;
 }
-
-
 
 :focus-visible {
   outline: none;
@@ -395,46 +417,34 @@ input {
 select:focus-visible,
 input:focus-visible {
   border: none;
-  outline: 1px solid #F1F1F1;
-
-
+  outline: 1px solid #f1f1f1;
 }
-
 
 /* focus-visible end*******************************************************/
 
-
-
-
 .header-top-login_account_link:hover {
-  color: #E9C479;
+  color: #e9c479;
   background-image: url(../img/personal_account_arrow-hover.svg);
 }
 
 .header-top-login_account_link:active {
-  color: #A47312;
+  color: #a47312;
   background-image: url(../img/personal_account_arrow-active.svg);
-
-
 }
 
 /*********************************************************/
 .header-top-block-logo_contact-contact_link:hover,
 .header-navigation-title-list-item_link:hover {
-  color: #CC9933;
+  color: #cc9933;
 }
-
 
 .header-top-block-logo_contact-contact_link:active,
 .header-navigation-title-list-item_link:active {
-
-  color: #A47312;
+  color: #a47312;
 }
 
-
-
 .offers-list-banner-block_text-detailed_link {
-  stroke: #FFCC66;
+  stroke: #ffcc66;
 }
 
 .offers-list-banner-block_text-detailed_link:hover {
@@ -443,41 +453,37 @@ input:focus-visible {
 }
 
 .offers-list-banner-block_text-detailed_link:active {
-  color: #E9C479;
-  stroke: #E9C479;
+  color: #e9c479;
+  stroke: #e9c479;
 }
 
-
 .services-list-item-title_link {
-  stroke: #CC9933;
+  stroke: #cc9933;
 }
 
 .services-list-item-title_link:hover {
-  color: #FFCC66;
-  stroke: #FFCC66;
+  color: #ffcc66;
+  stroke: #ffcc66;
 }
 
 .services-list-item-title_link:active {
-  color: #A47312;
-  stroke: #A47312;
+  color: #a47312;
+  stroke: #a47312;
 }
-
 
 .location-list-card-detailed_link {
   stroke: white;
 }
 
-
 .location-list-card-detailed_link:hover {
-  color: #FFCC66;
-  stroke: #FFCC66;
+  color: #ffcc66;
+  stroke: #ffcc66;
 }
 
 .location-list-card-detailed_link:active {
-  color: #A47312;
-  stroke: #A47312;
+  color: #a47312;
+  stroke: #a47312;
 }
-
 
 .contacts-address-list-item-tel_link-1:hover,
 .contacts-address-list-item-tel_link-2:hover,
@@ -488,11 +494,8 @@ input:focus-visible {
 .footer-right-item-tel_link-2:hover,
 .footer-right-item-email_link-1:hover,
 .footer-right-item-email_link-2:hover {
-  color: #E9C479;
+  color: #e9c479;
 }
-
-
-
 
 .contacts-address-list-item-tel_link-1:active,
 .contacts-address-list-item-tel_link-2:active,
@@ -503,30 +506,22 @@ input:focus-visible {
 .footer-right-item-tel_link-2:active,
 .footer-right-item-email_link-1:active,
 .footer-right-item-email_link-2:active {
-  color: #A47312;
+  color: #a47312;
 }
 
-
-
-
-
-
-.svg-footer-social-list-item-lagoona:hover>path,
-.svg-footer-social-list-item-ok:hover>path,
-.svg-footer-social-list-item-vk:hover>path {
-  fill: #CC9933;
+.svg-footer-social-list-item-lagoona:hover > path,
+.svg-footer-social-list-item-ok:hover > path,
+.svg-footer-social-list-item-vk:hover > path {
+  fill: #cc9933;
 }
 
-.svg-footer-social-list-item-lagoona:active>path,
-.svg-footer-social-list-item-ok:active>path,
-.svg-footer-social-list-item-vk:active>path {
-  fill: #A47312;
+.svg-footer-social-list-item-lagoona:active > path,
+.svg-footer-social-list-item-ok:active > path,
+.svg-footer-social-list-item-vk:active > path {
+  fill: #a47312;
 }
-
 
 /* hover end ********************************************************/
-
-
 
 .header {
   padding: 30px 0 71px 0;
@@ -544,28 +539,19 @@ input:focus-visible {
 .header-top-block-logo_contact-logo_link {
   vertical-align: middle;
   margin-right: 40px;
-
-
 }
-
-
 
 .header-top-block-logo_contact-contact_link {
   padding-top: 1px;
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   color: #666666;
-
 }
 
-
-
-
 .header-top-login_account_link {
-
   background-image: url(../img/personal_account_arrow-default.svg);
   background-repeat: no-repeat;
   background-position-y: 1px;
@@ -574,15 +560,13 @@ input:focus-visible {
   padding-top: 1px;
   margin-left: auto;
 
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #CC9933;
-
+  color: #cc9933;
 }
-
 
 /* Navigation start ********************************************************/
 
@@ -591,16 +575,14 @@ input:focus-visible {
   justify-content: flex-start;
 }
 
-
 .header-navigation-background {
   padding-top: 14px;
   padding-bottom: 14px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .header-navigation-title-list {
@@ -613,14 +595,13 @@ input:focus-visible {
 }
 
 .header-navigation-title-list-item_link {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   color: var(--header-link-color);
 }
-
 
 /* Button navigation start *********************************************************/
 
@@ -629,42 +610,34 @@ input:focus-visible {
   display: flex;
 }
 
-
 .btn-navigation:not(:last-child) {
   margin-right: 38px;
 }
 
 .btn-navigation {
-
-
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
 
-  color: #CC9933;
+  color: #cc9933;
 
   padding: 11px 20px;
-  border: 1px solid #CC9933;
+  border: 1px solid #cc9933;
   border-radius: 10px;
   gap: 10px;
-
 }
 
 /* Button navigation end  *********************************************************/
 /* Navigation end ********************************************************/
 /* header - end *********************************************************/
 
-
 /* offers start ********************************************************/
 
-
 .offers-list-all_banners {
-
   display: flex;
   justify-content: space-between;
   gap: 24px;
-
 }
 
 .offers {
@@ -673,23 +646,16 @@ input:focus-visible {
 
 .offers-title {
   padding-left: 40px;
-
 }
 
 .offers-list {
-
   flex-direction: column;
   justify-content: space-between;
-
 }
 
 .grow_offers {
   flex-grow: 1;
 }
-
-
-
-
 
 /* Блоки баннеров start ********************************************************/
 
@@ -706,7 +672,6 @@ input:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
 }
 
 .offers-list-banner-luxe {
@@ -719,7 +684,6 @@ input:focus-visible {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-
 }
 
 /* Блоки баннеров end ********************************************************/
@@ -727,30 +691,33 @@ input:focus-visible {
 /* Блоки баннеров Decoration start ********************************************************/
 
 .decor-offers-list-banner-1 {
-  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%,
-      rgba(53, 65, 83, 0) 65.7%), url(../img/Остров_Мальдивы.jpg);
+  background: linear-gradient(
+      90deg,
+      rgba(48, 64, 89, 0.84) -2.9%,
+      rgba(53, 65, 83, 0) 65.7%
+    ),
+    url(../img/Остров_Мальдивы.jpg);
 
   background-repeat: no-repeat;
   background-size: cover;
-
-
 }
 
-
 .decor-offers-list-banner-2 {
-  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%,
-      rgba(53, 65, 83, 0) 65.7%), url(../img/Остров_Крит.jpg);
+  background: linear-gradient(
+      90deg,
+      rgba(48, 64, 89, 0.84) -2.9%,
+      rgba(53, 65, 83, 0) 65.7%
+    ),
+    url(../img/Остров_Крит.jpg);
 
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .decor-offers-list-banner-luxe-1 {
   background-image: url(../img/Номер_люкс.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 /* Блоки баннеров Decoration *********************************************************/
@@ -761,17 +728,16 @@ input:focus-visible {
 
 .offers-list-banner-block_text-title {
   padding-top: 41px;
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 14px;
 }
 
 .offers-list-banner-block_text-price {
-
   display: block;
   padding-top: 1px;
   margin-bottom: auto;
@@ -781,67 +747,52 @@ input:focus-visible {
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.8;
-
 }
 
 .offers-list-banner-block_text-detailed_link {
-
   display: flex;
   align-items: center;
   margin-bottom: 39px;
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #F0BF5F;
+  color: #f0bf5f;
 }
-
 
 .decor-detailed_link {
   margin-left: 6px;
 }
 
-
-
-
 /* style link end ********************************************************/
-
 
 /* style text luxe ********************************************************/
 
 .offers-list-banner-luxe-block_text-title {
-
   /* padding-top: 213px; */
 
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 14px;
-
 }
 
 .offers-list-banner-luxe-block_text-price {
-
-
   margin-bottom: 45px;
   font-family: unset;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.8;
-
 }
-
-
-
 
 .offers-list-banner-luxe-block_text-link {
   margin-bottom: 40px;
@@ -850,7 +801,6 @@ input:focus-visible {
 /* style text end ********************************************************/
 /* offers end *********************************************************/
 
-
 /* about us start *********************************************************/
 
 .about-us {
@@ -858,21 +808,18 @@ input:focus-visible {
 }
 
 .about-us-title {
-
   padding-left: 40px;
-
 }
 
 .about-us-description {
   width: 888px;
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 200%;
   text-align: left;
   color: #000000;
-
 }
 
 /* about us end *********************************************************/
@@ -880,8 +827,6 @@ input:focus-visible {
 .section-title {
   margin-bottom: 19px;
 }
-
-
 
 /* services start *********************************************************/
 
@@ -893,17 +838,13 @@ input:focus-visible {
   padding-left: 40px;
 }
 
-
 .services-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-
 }
 
-
 .services-list-item {
-
   display: flex;
   flex-direction: column;
 
@@ -911,17 +852,12 @@ input:focus-visible {
   min-height: 330px;
   border-radius: 16px;
 
-
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 
   padding: 192px 0 34px 45px;
-
 }
 
-
 /* services-block end *********************************************************/
-
-
 
 .services-svg {
   margin-bottom: 2px;
@@ -930,29 +866,25 @@ input:focus-visible {
 
 /* services-block end *********************************************************/
 
-
 /* services style start  *********************************************************/
 
-
 .services-list-item-title_link {
-
   display: flex;
   align-items: center;
 
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
 
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
 
-  color: #CC9933;
+  color: #cc9933;
 }
-
 
 .services-list-item-description {
   width: 402px;
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
 
@@ -960,8 +892,6 @@ input:focus-visible {
   line-height: 200%;
   color: #000000;
   margin-bottom: auto;
-
-
 }
 
 /* services style end  *********************************************************/
@@ -978,7 +908,6 @@ input:focus-visible {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
-
 }
 
 .decor-services-list-item-3 {
@@ -986,7 +915,6 @@ input:focus-visible {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
-
 }
 
 .decor-services-list-item-4 {
@@ -994,10 +922,7 @@ input:focus-visible {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
-
 }
-
-
 
 /* services end *********************************************************/
 
@@ -1018,17 +943,14 @@ input:focus-visible {
 }
 
 .advantages-list-item {
-
   width: 276px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 16px;
 
   display: flex;
   flex-direction: column;
   padding-top: 40px;
   padding-bottom: 32.609px;
-
-
 }
 
 .advantages-list-item-block_content {
@@ -1037,14 +959,10 @@ input:focus-visible {
   flex-direction: column;
   width: 191px;
   margin-left: 5px;
-
-
 }
 
-
 .advantages-list-item-description {
-
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1052,7 +970,6 @@ input:focus-visible {
   line-height: 200%;
   color: #000000;
   padding-top: 4px;
-
 }
 
 /* advantages end *********************************************************/
@@ -1067,18 +984,14 @@ input:focus-visible {
   padding-left: 40px;
 }
 
-
 .location-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
 }
 
-
-
 .location-list-card {
-
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 374px;
   min-height: 440px;
   border-radius: 16px;
@@ -1088,7 +1001,6 @@ input:focus-visible {
   align-items: flex-start;
   padding-left: 44px;
   padding-right: 45px;
-
 }
 
 .decor-location-list-card-1 {
@@ -1155,7 +1067,6 @@ input:focus-visible {
   padding-top: 249px;
 }
 
-
 .decor-location-list-card-9 {
   padding: 0;
   background-image: url(../img/Размещение_9.jpg);
@@ -1166,42 +1077,36 @@ input:focus-visible {
   align-items: center;
 }
 
-
 .location-list-card-detailed_link {
   display: flex;
   align-items: center;
   margin-bottom: 26px;
 
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
-  color: #FFFFFF;
-
+  color: #ffffff;
 }
 
 .svg-location-list-card-detailed_link {
   margin-left: 8px;
 }
 
-
 .location-list-card-price_rating {
   display: flex;
   align-items: flex-end;
   width: -webkit-fill-available;
   margin-bottom: 12px;
-
 }
 
 .location-list-card_rating {
-
   padding-bottom: 1px;
   margin-left: auto;
   display: flex;
   align-items: flex-start;
 }
-
 
 .location-list-card-card_rating-decor:not(:last-child) {
   margin-right: 6px;
@@ -1209,27 +1114,23 @@ input:focus-visible {
 
 /* location style start *********************************************************/
 .location-list-card-detailed_link-text {
-
   margin-right: 8px;
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
-  color: #FFFFFF;
-
+  color: #ffffff;
 }
 
 .location-list-card-price_rating-price {
   display: flex;
   padding-left: 1px;
   align-items: center;
-
 }
 
-
 .location-list-card-price_rating-price-from {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1237,17 +1138,16 @@ input:focus-visible {
 }
 
 .location-list-card-price_rating-price-price {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   color: #000000;
   margin-left: 4px;
-
 }
 
 .location-list-card-price_rating-price-text {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1256,8 +1156,7 @@ input:focus-visible {
 }
 
 .location-list-card-hotelname {
-
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1267,7 +1166,7 @@ input:focus-visible {
 }
 
 .location-list-card-hotelname-citi {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1280,15 +1179,14 @@ input:focus-visible {
 
 /* location btn start *********************************************************/
 
-
 .btn-location-list-card {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 45px;
-  color: #CC9933;
-  border: 1px solid #CC9933;
+  color: #cc9933;
+  border: 1px solid #cc9933;
   border-radius: 10px;
   padding: 11px 20px;
 }
@@ -1307,10 +1205,9 @@ input:focus-visible {
 }
 
 .search-tour-background {
-  background: #E9E9E9;
+  background: #e9e9e9;
   border-radius: 16px;
   padding-bottom: 45px;
-
 }
 
 .search-tour-background-bar-flex {
@@ -1351,13 +1248,10 @@ label {
   margin-right: 33px;
 }
 
-
 .form-search-tour-bar-list-input {
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
 }
 
 .form-search-tour-bar-list-input-date-margin {
@@ -1366,18 +1260,14 @@ label {
 
 .form-search-tour-bar-list-input-number_1-margin {
   margin-left: 6px;
-
 }
 
 .form-search-tour-bar-list-input-number_2-margin {
   margin-left: 8px;
-
 }
 
-
 .date_1-title_text {
-
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1385,10 +1275,9 @@ label {
   color: #000000;
 }
 
-
 .number_1-title_text,
 .number_2-title_text {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1400,44 +1289,31 @@ label {
 .form-search-tour-bar-list-input-country-tilte_text {
   padding-left: 4px;
 
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   color: #000000;
-
 }
 
 input[type="date"] {
-
   letter-spacing: -1px;
   width: 123px;
   color: #000000;
   cursor: text;
-
-
 }
-
-
-
-
-
-
 
 select {
   cursor: pointer;
   border: 0px;
   outline: 0px;
   padding-right: 22px;
-
 }
 
 .country_1 {
   padding-right: 49px;
 }
-
-
 
 .number-spin-button_1::-webkit-inner-spin-button,
 .number-spin-button_2::-webkit-inner-spin-button {
@@ -1446,33 +1322,29 @@ select {
 
 .number-spin-button_1 {
   background: transparent;
-  border-bottom: 1px solid #E9E9E9;
+  border-bottom: 1px solid #e9e9e9;
   width: 121px;
-
 }
 
 .number-spin-button_2 {
   background: transparent;
-  border-bottom: 1px solid #E9E9E9;
+  border-bottom: 1px solid #e9e9e9;
   width: 121px;
-
 }
 
-
 .btn-form-search-tour-bar-buttom {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
 
-  color: #CC9933;
-  border: 1px solid #CC9933;
+  color: #cc9933;
+  border: 1px solid #cc9933;
   border-radius: 10px;
   padding: 11px 30px;
 
   margin-left: 51px;
   margin-right: 27px;
-
 }
 
 /* search-tour end *********************************************************/
@@ -1481,7 +1353,6 @@ address {
   font-style: normal;
 }
 
-
 .contacts-title {
   padding-left: 40px;
 }
@@ -1489,7 +1360,6 @@ address {
 .contacts {
   padding-bottom: 40px;
 }
-
 
 .contacts-block {
   background-color: white;
@@ -1501,7 +1371,6 @@ address {
   /* flex-wrap: wrap; */
 }
 
-
 .decor-contacts {
   background-image: url(../img/Контакты_офис.jpg);
   background-repeat: no-repeat;
@@ -1509,7 +1378,6 @@ address {
 
   width: 653px;
   min-height: 528px;
-
 }
 
 .contacts-address {
@@ -1531,7 +1399,7 @@ address {
 
 .contacts-address-list-item {
   display: flex;
-  border-bottom: 1px solid #E9E9E9;
+  border-bottom: 1px solid #e9e9e9;
 }
 
 /* .contacts-address-list-item:not(:last-child) {
@@ -1545,14 +1413,11 @@ address {
 .contacts-address-list-item-tel_link-block {
   display: grid;
   justify-items: start;
-
 }
-
 
 /* .contacts-address-list-margin-left {
   margin-left: ;
 } */
-
 
 /* contacts style start *********************************************************/
 
@@ -1560,18 +1425,17 @@ address {
 .contacts-address-list-item-caption_title,
 .contacts-address-list-item-caption_title,
 .contacts-address-list-item-caption_title {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
   color: #000000;
   width: 40%;
-
 }
 
 .contacts-address-list-item-caption_description {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1580,33 +1444,31 @@ address {
   margin-bottom: 22px;
 
   width: 192px;
-
 }
 
 .contacts-address-list-item-tel_link-1,
 .contacts-address-list-item-tel_link-2 {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #CC9933;
+  color: #cc9933;
 }
-
 
 .contacts-address-list-item-email_link-1,
 .contacts-address-list-item-email_link-2 {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #CC9933;
+  color: #cc9933;
 }
 
 .contacts-address-list-item-email_description-1,
 .contacts-address-list-item-email_description-2 {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1615,7 +1477,7 @@ address {
 }
 
 .contacts-address-list-item-caption_description-time {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1625,24 +1487,22 @@ address {
   width: 177px;
 }
 
-
 /* contacts style end *********************************************************/
 
 /* contacts btn start *********************************************************/
 
 .btn-contacts-address-buttom {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
 
-  color: #CC9933;
-  border: 1px solid #CC9933;
+  color: #cc9933;
+  border: 1px solid #cc9933;
   border-radius: 10px;
   padding: 25px 29px;
 
   box-sizing: border-box;
-
 }
 
 /* contacts btn end *********************************************************/
@@ -1665,7 +1525,6 @@ address {
 .footer-left {
   display: flex;
   flex-direction: column;
-
 }
 
 .footer-right {
@@ -1684,7 +1543,6 @@ address {
   justify-items: start;
 }
 
-
 .footer-left-item:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -1700,78 +1558,74 @@ address {
 /* footer style left start *********************************************************/
 
 .footer-left-copy-text-1 {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 190%;
-  color: #FFFFFF;
+  color: #ffffff;
 
   width: 302px;
 }
 
 .footer-left-copy-text-2 {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 190%;
-  color: #FFFFFF;
+  color: #ffffff;
 
   width: 302px;
-
 }
 
 .footer-left-user-agreement_link {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #CC9933;
+  color: #cc9933;
 }
 
 .decor-footer-logo {
-
   background-image: url(../img/footer-logo.svg);
   background-repeat: no-repeat;
   background-size: auto;
   background-position: bottom;
   background-position-x: 80%;
-
 }
 
 /* footer style left end *********************************************************/
 /* footer style right start *********************************************************/
 
 .footer-right-copy-text-1 {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 188%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer-right-item-tel_link-1,
 .footer-right-item-tel_link-2 {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #CC9933;
+  color: #cc9933;
 }
 
 .footer-right-item-email_link-1,
 .footer-right-item-email_link-2 {
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #CC9933;
+  color: #cc9933;
 }
-
 
 /* footer end *********************************************************/
