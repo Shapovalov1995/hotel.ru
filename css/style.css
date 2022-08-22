@@ -295,8 +295,9 @@ img {
 
 /* focus-visible start*******************************************************/
 
-
-
+.header-top-block-logo_contact-logo_link:focus-visible {
+  outline: 1px solid #CC9933;
+}
 
 /*contact***/
 
@@ -356,6 +357,44 @@ img {
 .contacts-address-list-item-email_link-2:focus-visible {
   outline: 1px solid #E9C479;
   color: #E9C479;
+}
+
+.decor-footer-social-list-item-lagoona:focus-visible>svg>path,
+.decor-footer-social-list-item-ok:focus-visible>svg>path,
+.decor-footer-social-list-item-vk:focus-visible>svg>path {
+  fill: #CC9933;
+}
+
+
+/*footer***/
+
+.footer-left-user-agreement_link:focus-visible,
+.footer-right-item-tel_link-1:focus-visible,
+.footer-right-item-tel_link-2:focus-visible,
+.footer-right-item-email_link-1:focus-visible,
+.footer-right-item-email_link-2:focus-visible {
+  outline: 1px solid #E9C479;
+  color: #E9C479;
+}
+
+
+
+:focus-visible {
+  outline: none;
+}
+
+/*input***/
+
+input {
+  border: none;
+}
+
+select:focus-visible,
+input:focus-visible {
+  border: none;
+  outline: 1px solid #FFCC66;
+
+
 }
 
 
@@ -468,9 +507,6 @@ img {
 
 
 
-.decor-footer-social-list-item-lagoona:focus-visible>svg>path {
-  fill: #CC9933;
-}
 
 .svg-footer-social-list-item-lagoona:hover>path,
 .svg-footer-social-list-item-ok:hover>path,
@@ -483,6 +519,7 @@ img {
 .svg-footer-social-list-item-vk:active>path {
   fill: #A47312;
 }
+
 
 /* hover end ********************************************************/
 
@@ -1376,14 +1413,13 @@ input[type="date"] {
   color: #000000;
   cursor: text;
 
-}
-
-
-input {
-  outline: none !important;
-  border: none;
 
 }
+
+
+
+
+
 
 
 select {
