@@ -228,14 +228,14 @@ img {
   text-align: center;
   color: #fff;
   border-radius: 4px;
-  background: #e9c379;
+  background: #F0BF5F;
 
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
 #toTop:hover {
-  background: #cc9933;
+  background: #CC9933;
 }
 #toTop:active {
   background: #a47312;
@@ -256,7 +256,7 @@ img {
 }
 
 #toTop.show {
-  opacity: 1;
+  opacity: 85%;
   visibility: visible;
   right: calc(2%);
 }
@@ -353,6 +353,7 @@ img {
 .header-navigation-title-list-item_link:focus-visible {
   outline: 1px solid #cc9933;
   color: #cc9933;
+
 }
 
 .offers-list-banner:focus-visible,
@@ -570,6 +571,16 @@ input:focus-visible {
 
 /* Navigation start ********************************************************/
 
+/* ol {
+  counter-reset: section;
+  list-style: none;
+}
+
+li::before {
+  counter-increment: section;
+  content: "0" counter(section) ":";
+} */
+
 .header-navigation {
   align-items: flex-start;
   justify-content: flex-start;
@@ -585,9 +596,14 @@ input:focus-visible {
   justify-content: space-between;
 }
 
+.header-navigation-title-list-item:hover {
+
+}
+
 .header-navigation-title-list {
   display: flex;
   padding-left: 46px;
+  align-items: flex-start;
 }
 
 .header-navigation-title-list-item:not(:last-child) {
@@ -947,13 +963,19 @@ input:focus-visible {
   background-color: #ffffff;
   border-radius: 16px;
 
+
   display: flex;
   flex-direction: column;
   padding-top: 40px;
   padding-bottom: 32.609px;
 }
 
+
+
+
 .advantages-list-item-block_content {
+
+
   align-self: center;
   align-items: flex-start;
   flex-direction: column;
@@ -1026,6 +1048,8 @@ input:focus-visible {
   background-position: top;
   padding-top: 249px;
 }
+
+
 
 .decor-location-list-card-4 {
   background-image: url(../img/Размещение_4.jpg);
@@ -1523,11 +1547,13 @@ address {
 .footer-left {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .footer-right {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   margin-right: 14%;
 }
 

@@ -41,7 +41,7 @@
     <div class="container header-navigation">
       <div class="header-navigation-background">
         <nav class="header-navigation-title">
-          <ul class="reset-list header-navigation-title-list">
+          <ul class="reset-list header-navigation-title-list word-break_word">
 
             <li class="header-navigation-title-list-item">
               <a href="#" class="header-navigation-title-list-item_link">
@@ -81,7 +81,7 @@
 
           </ul>
         </nav>
-        <div class="button-header-navigation ">
+        <div class="button-header-navigation word-break_word ">
           <button class="reset-btn btn btn-navigation">
             Хочу тур
           </button>
@@ -168,6 +168,7 @@
 
           </article>
 
+
         </div>
       </div>
     </section>
@@ -189,6 +190,7 @@
           и&nbsp;административных условий.
         </p>
       </div>
+
     </section>
     <!-- О Нас end -->
     <!-- Услуги start -->
@@ -282,7 +284,12 @@
         <ul class="reset-list advantages-list">
 
           <li class="advantages-list-item">
+
             <div class="advantages-list-item-block_content">
+
+
+
+
               <svg width="64" height="66" fill="none">
                 <g clip-path="url(#clip0_963_507)">
                   <path
@@ -1378,9 +1385,9 @@
 
                   <li class="form-search-tour-bar-list-input">
                     <label for="city_1">
-                      <p class="form-search-tour-bar-list-input-city-tilte_text">
+                      <span class="form-search-tour-bar-list-input-city-tilte_text">
                         Город вылета
-                      </p>
+                      </span>
                     </label>
                     <select name="city" id="city_1" class="city" required>
 
@@ -1399,9 +1406,9 @@
 
                   <li class="form-search-tour-bar-list-input">
                     <label for="country_1">
-                      <p class="form-search-tour-bar-list-input-country-tilte_text">
+                      <span class="form-search-tour-bar-list-input-country-tilte_text">
                         Страна
-                      </p>
+                      </span>
                     </label>
                     <select name="country" id="country_1" class="country_1" required>
                       <option value="" class="select-list">-- Выбрать --</option>
@@ -1422,9 +1429,10 @@
 
 
                     <label for="date_1" class="date_1-title_text">
-                      <p>
+                      <span>
                         Дата прибытия
-                      </p>
+                      </span>
+
                     </label>
                     <input type="date" name="date" id="date_1" required>
 
@@ -1433,9 +1441,10 @@
 
                   <li class="form-search-tour-bar-list-input form-search-tour-bar-list-input-number_1-margin">
                     <label for="number_1" class="number_1-title_text">
-                      <p>
+                      <span>
                         Ночей
-                      </p>
+                      </span>
+
                     </label>
                     <input class="number-spin-button_1" type="number" name="nights" min="6" max="31" id="number_1"
                       required>
@@ -1443,9 +1452,10 @@
 
                   <li class="form-search-tour-bar-list-input form-search-tour-bar-list-input-number_2-margin">
                     <label for="number_2" class="number_2-title_text">
-                      <p>
+                      <span>
                         Туристы
-                      </p>
+                      </span>
+
                     </label>
                     <input class="number-spin-button_2" type="number" name="tourist" min="2" max="31" id="number_2"
                       required>
@@ -1486,9 +1496,9 @@
             <ul class="reset-list contacts-address-list">
 
               <li class="contacts-address-list-item">
-                <h5 class="contacts-address-list-item-caption_title">
+                <p class="contacts-address-list-item-caption_title">
                   Адрес
-                </h5>
+                </p>
                 <p class="contacts-address-list-item-caption_description contacts-address-list-border-bottom
                 contacts-address-list-margin-left">
                   Москва, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
@@ -1496,9 +1506,9 @@
               </li>
 
               <li class="contacts-address-list-item">
-                <h5 class="contacts-address-list-item-caption_title">
+                <p class="contacts-address-list-item-caption_title">
                   Телефоны
-                </h5>
+                </p>
                 <div class="contacts-address-list-item-tel_link-block contacts-address-list-border-bottom
                 contacts-address-list-margin-left">
                   <a href="tel:+74995356434" class="contacts-address-list-item-tel_link-1">
@@ -1511,9 +1521,9 @@
               </li>
 
               <li class="contacts-address-list-item">
-                <h5 class="contacts-address-list-item-caption_title">
+                <p class="contacts-address-list-item-caption_title">
                   Email
-                </h5>
+                </p>
                 <div class="contacts-address-list-item-email_link-block contacts-address-list-border-bottom
                 contacts-address-list-margin-left">
 
@@ -1540,9 +1550,9 @@
               </li>
 
               <li class="contacts-address-list-item">
-                <h5 class="contacts-address-list-item-caption_title">
+                <p class="contacts-address-list-item-caption_title">
                   График
-                </h5>
+                </p>
                 <p class="contacts-address-list-item-caption_description-time contacts-address-list-border-bottom
                 contacts-address-list-margin-left">
                   Понедельник-пятница, с&nbsp;10:00 до&nbsp;19:00
@@ -1574,63 +1584,53 @@
 
       <div class="footer-background decor-footer-logo">
 
-        <ul class="reset-list footer-left">
-          <li class="footer-left-item">
-            <p class="footer-left-copy-text-1">
-              &copy;&nbsp;2012-2020 Управляющая компания Объединенной сети &laquo;Лагуна
-              Хотелс&raquo;
-            </p>
-          </li>
+        <div class="footer-left">
 
-          <li class="footer-left-item">
-            <p class="footer-left-copy-text-2">
-              Представленная на&nbsp;сайте информация носит справочный характер
-              и&nbsp;не&nbsp;является публичной
-              офертой
-            </p>
-          </li>
+          <p class="footer-left-item footer-left-copy-text-1">
+            &copy;&nbsp;2012-2020 Управляющая компания Объединенной сети &laquo;Лагуна
+            Хотелс&raquo;
+          </p>
+          <p class="footer-left-item footer-left-copy-text-2">
+            Представленная на&nbsp;сайте информация носит справочный характер
+            и&nbsp;не&nbsp;является публичной
+            офертой
+          </p>
+          <a href="#!" class="footer-left-item footer-left-user-agreement_link">
+            Пользовательское соглашение
+          </a>
 
-          <li class="footer-left-item">
-            <a href="#!" class="footer-left-user-agreement_link">
-              Пользовательское соглашение
+        </div>
+
+        <div class="footer-right">
+
+          <p class="footer-right-item footer-right-copy-text-1">
+            11710, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
+          </p>
+
+          <div class="footer-right-item footer-right-item-tel">
+            <a href="tel:+74995356434" class="footer-right-item-tel_link-1">
+              +7 499 535-64-34
             </a>
-          </li>
-        </ul>
+            <a href="tel:+74950050544" class="footer-right-item-tel_link-2">
+              +7 495 005-05-44
+            </a>
+          </div>
 
+          <div class="footer-right-item footer-right-item-email">
+            <a href="mailto:lg.oona@mail.ru" class="footer-right-item-email_link-1">
+              lg.oona@mail.ru
+            </a>
+            <a href="mailto:hotels.ln@mail.ru" class="footer-right-item-email_link-2">
+              hotels.ln@mail.ru
+            </a>
+          </div>
 
-        <ul class="reset-list footer-right ">
-          <li class="footer-right-item">
-            <p class="footer-right-copy-text-1">
-              11710, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
-            </p>
-          </li>
-
-          <li class="footer-right-item">
-            <div class="footer-right-item-tel">
-              <a href="tel:+74995356434" class="footer-right-item-tel_link-1">
-                +7 499 535-64-34
-              </a>
-              <a href="tel:+74950050544" class="footer-right-item-tel_link-2">
-                +7 495 005-05-44
-              </a>
-            </div>
-          </li>
-
-          <li class="footer-right-item">
-            <div class="footer-right-item-email">
-              <a href="mailto:lg.oona@mail.ru" class="footer-right-item-email_link-1">
-                lg.oona@mail.ru
-              </a>
-              <a href="mailto:hotels.ln@mail.ru" class="footer-right-item-email_link-2">
-                hotels.ln@mail.ru
-              </a>
-            </div>
-          </li>
-
-        </ul>
+        </div>
 
         <div class="decor-footer-social">
           <ul class="reset-list decor-footer-social-list">
+
+
             <li class="decor-footer-social-list-item">
               <a href="#!" class="decor-footer-social-list-item-lagoona">
                 <svg width="25" height="25" class="svg-footer-social-list-item-lagoona">
@@ -1649,6 +1649,7 @@
                 </svg>
               </a>
             </li>
+
             <li class="decor-footer-social-list-item">
               <a href="#!" class="decor-footer-social-list-item-ok">
                 <svg width="25" height="25" fill="none" class="svg-footer-social-list-item-ok">
@@ -1659,6 +1660,7 @@
                 </svg>
               </a>
             </li>
+
             <li class="decor-footer-social-list-item">
               <a href="#!" class="decor-footer-social-list-item-vk">
                 <svg width="25" height="25" fill="none" class="svg-footer-social-list-item-vk">
