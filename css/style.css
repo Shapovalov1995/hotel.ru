@@ -150,15 +150,12 @@ body {
   font-family: "Muller", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f1f1f1;
   cursor: default;
-}
-
-.word-break_word {
-  word-break: break-word;
-}
-
-.word-break_all {
   word-break: break-all;
 }
+
+/* .word-break_word {
+  word-break: break-word;
+} */
 
 a {
   color: inherit;
@@ -228,14 +225,14 @@ img {
   text-align: center;
   color: #fff;
   border-radius: 4px;
-  background: #F0BF5F;
+  background: #f0bf5f;
 
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
 #toTop:hover {
-  background: #CC9933;
+  background: #cc9933;
 }
 #toTop:active {
   background: #a47312;
@@ -353,7 +350,6 @@ img {
 .header-navigation-title-list-item_link:focus-visible {
   outline: 1px solid #cc9933;
   color: #cc9933;
-
 }
 
 .offers-list-banner:focus-visible,
@@ -597,7 +593,6 @@ li::before {
 }
 
 .header-navigation-title-list-item:hover {
-
 }
 
 .header-navigation-title-list {
@@ -963,19 +958,13 @@ li::before {
   background-color: #ffffff;
   border-radius: 16px;
 
-
   display: flex;
   flex-direction: column;
   padding-top: 40px;
   padding-bottom: 32.609px;
 }
 
-
-
-
 .advantages-list-item-block_content {
-
-
   align-self: center;
   align-items: flex-start;
   flex-direction: column;
@@ -1048,8 +1037,6 @@ li::before {
   background-position: top;
   padding-top: 249px;
 }
-
-
 
 .decor-location-list-card-4 {
   background-image: url(../img/Размещение_4.jpg);
