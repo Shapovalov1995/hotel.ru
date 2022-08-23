@@ -1368,7 +1368,6 @@ address {
   flex-direction: row-reverse;
   justify-content: space-between;
   padding: 45px;
-  /* flex-wrap: wrap; */
 }
 
 .decor-contacts {
@@ -1381,7 +1380,6 @@ address {
 }
 
 .contacts-address {
-  /* border: 1px solid #CC9933; */
   width: 35%;
   display: flex;
   flex-wrap: wrap;
