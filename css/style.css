@@ -649,7 +649,7 @@ input:focus-visible {
   display: flex;
 }
 
-.btn-navigation:not(:last-child) {
+.button-header-navigation-link:not(:last-child) {
   margin-right: 38px;
 }
 
