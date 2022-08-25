@@ -640,6 +640,7 @@ input:focus-visible {
   font-size: 16px;
   line-height: 16px;
   color: var(--header-link-color);
+
 }
 
 /* Button navigation start *********************************************************/
@@ -1239,7 +1240,7 @@ input:focus-visible {
 }
 
 .search-tour {
-  padding-bottom: 70px;
+  padding-bottom: 40px;
 }
 
 .search-tour-background {
@@ -1396,6 +1397,7 @@ address {
 }
 
 .contacts {
+  padding-top: 30px;
   padding-bottom: 40px;
 }
 
