@@ -296,17 +296,18 @@ img {
 
 .btn:hover {
   animation-name: btn;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
   background-color: #cc9933;
   color: white;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn:focus-visible {
   outline: none;
   animation-name: btn;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
   background-color: #cc9933;
@@ -315,7 +316,7 @@ img {
 
 .btn:active {
   animation-name: btn;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
   background-color: #a47312;
@@ -326,41 +327,49 @@ img {
 
 /* focus-visible start*******************************************************/
 
-.header-top-block-logo_contact-logo_link:focus-visible {
+.header-top-logo_contact-logo_link:focus-visible {
   outline: 1px solid #cc9933;
+  outline-offset: 4px;
 }
 
 /*contact***/
 
-.header-top-block-logo_contact-contact_link:focus-visible {
+.header-top-logo_contact-contact_link:focus-visible {
   outline: 1px solid #cc9933;
+  outline-offset: 10px;
   color: #cc9933;
 }
 
 /*login_account***/
-
-.header-top-login_account_link:focus-visible {
-  background-image: url(../img/personal_account_arrow-default.svg);
-  outline: 1px solid #cc9933;
-  color: #cc9933;
-}
 
 /*navigation***/
 
 .header-navigation-title-list-item_link:focus-visible {
   outline: 1px solid #cc9933;
   color: #cc9933;
+  outline-offset: 10px;
 }
 
-.offers-list-banner:focus-visible,
+/*offers-list-banner***/
+
+.offers-list-banner:focus-visible {
+  outline: 1px solid #cc9933;
+  outline-offset: 4px;
+  border-radius: 0%;
+}
+
 .offers-list-banner-luxe:focus-visible {
   outline: 1px solid #cc9933;
+  outline-offset: 4px;
+  border-radius: 0%;
 }
 
 /*services-list-item***/
 
 .services-list-item:focus-visible {
   outline: 1px solid #cc9933;
+  outline-offset: 4px;
+  border-radius: 0%;
 }
 
 /*location-list-card***/
@@ -419,54 +428,81 @@ input:focus-visible {
 
 /* focus-visible end*******************************************************/
 
-.header-top-login_account_link:hover {
-  color: #e9c479;
-  background-image: url(../img/personal_account_arrow-hover.svg);
+.header-top-login_account-link:hover,
+.header-top-login_account-link:hover > svg > path {
+  color: #e9c379;
+  fill: #e9c379;
+  transition: all 0.3s ease-in-out;
 }
 
-.header-top-login_account_link:active {
+.header-top-login_account-link:active,
+.header-top-login_account-link:active > svg > path {
   color: #a47312;
-  background-image: url(../img/personal_account_arrow-active.svg);
+  fill: #a47312;
+}
+
+.header-top-login_account-link:focus-visible {
+  outline: 1px solid #cc9933;
+  outline-offset: 10px;
 }
 
 /*********************************************************/
-.header-top-block-logo_contact-contact_link:hover,
+.header-top-logo_contact-contact_link:hover,
 .header-navigation-title-list-item_link:hover {
   color: #cc9933;
+  transition: all 0.3s ease-in-out;
 }
 
-.header-top-block-logo_contact-contact_link:active,
+.header-top-logo_contact-contact_link:active,
 .header-navigation-title-list-item_link:active {
   color: #a47312;
 }
+
+/*********************************************************/
 
 .offers-list-banner-block_text-detailed_link {
   stroke: #ffcc66;
 }
 
-.offers-list-banner-block_text-detailed_link:hover {
+.offers-list-banner:hover .offers-list-banner-block_text-detailed_link {
   color: white;
   stroke: white;
+  transition: all 0.3s ease-in-out;
 }
 
-.offers-list-banner-block_text-detailed_link:active {
-  color: #e9c479;
-  stroke: #e9c479;
+.offers-list-banner:active .offers-list-banner-block_text-detailed_link {
+  color: #a47312;
+  stroke: #a47312;
 }
 
+.offers-list-banner-luxe:hover .offers-list-banner-block_text-detailed_link {
+  color: white;
+  stroke: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.offers-list-banner-luxe:active .offers-list-banner-block_text-detailed_link {
+  color: #a47312;
+  stroke: #a47312;
+}
+
+/*********************************************************/
 .services-list-item-title_link {
   stroke: #cc9933;
 }
 
-.services-list-item-title_link:hover {
+.services-list-item:hover .services-list-item-title_link {
   color: #ffcc66;
   stroke: #ffcc66;
+  transition: all 0.3s ease-in-out;
 }
 
-.services-list-item-title_link:active {
+.services-list-item:active .services-list-item-title_link {
   color: #a47312;
   stroke: #a47312;
 }
+
+/*********************************************************/
 
 .location-list-card-detailed_link {
   stroke: white;
@@ -475,6 +511,7 @@ input:focus-visible {
 .location-list-card-detailed_link:hover {
   color: #ffcc66;
   stroke: #ffcc66;
+  transition: all 0.3s ease-in-out;
 }
 
 .location-list-card-detailed_link:active {
@@ -491,6 +528,7 @@ input:focus-visible {
 .footer-right-item-tel_link-2:hover,
 .footer-right-item-email_link-1:hover,
 .footer-right-item-email_link-2:hover {
+  transition: all 0.3s ease-in-out;
   color: #e9c479;
 }
 
@@ -509,7 +547,9 @@ input:focus-visible {
 .svg-footer-social-list-item-lagoona:hover > path,
 .svg-footer-social-list-item-ok:hover > path,
 .svg-footer-social-list-item-vk:hover > path {
+  transition: all 0.3s ease-in-out;
   fill: #cc9933;
+  transition: all 0.3s ease-in-out;
 }
 
 .svg-footer-social-list-item-lagoona:active > path,
@@ -533,12 +573,12 @@ input:focus-visible {
   align-items: center;
 }
 
-.header-top-block-logo_contact-logo_link {
+.header-top-logo_contact-logo_link {
   vertical-align: middle;
   margin-right: 40px;
 }
 
-.header-top-block-logo_contact-contact_link {
+.header-top-logo_contact-contact_link {
   padding-top: 1px;
   font-family: "Muller";
   font-style: normal;
@@ -548,13 +588,10 @@ input:focus-visible {
   color: #666666;
 }
 
-.header-top-login_account_link {
-  background-image: url(../img/personal_account_arrow-default.svg);
-  background-repeat: no-repeat;
-  background-position-y: 1px;
+.header-top-login_account-link {
+  display: flex;
+  flex-direction: row-reverse;
 
-  padding-left: 28px;
-  padding-top: 1px;
   margin-left: auto;
 
   font-family: "Muller";
@@ -565,17 +602,11 @@ input:focus-visible {
   color: #cc9933;
 }
 
-/* Navigation start ********************************************************/
-
-/* ol {
-  counter-reset: section;
-  list-style: none;
+.svg-header-top-login_account {
+  margin-right: 7px;
 }
 
-li::before {
-  counter-increment: section;
-  content: "0" counter(section) ":";
-} */
+/* Navigation start ********************************************************/
 
 .header-navigation {
   align-items: flex-start;
@@ -590,9 +621,6 @@ li::before {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.header-navigation-title-list-item:hover {
 }
 
 .header-navigation-title-list {
@@ -860,7 +888,7 @@ li::before {
   flex-direction: column;
 
   width: 573px;
-  min-height: 330px;
+
   border-radius: 16px;
 
   background-color: #ffffff;
@@ -882,7 +910,6 @@ li::before {
 .services-list-item-title_link {
   display: flex;
   align-items: center;
-
   font-family: "Muller";
   font-style: normal;
 
@@ -1251,7 +1278,7 @@ label {
 
 .form-search-tour-bar-list {
   display: flex;
-
+  align-items: center;
   margin-left: 24px;
 }
 
