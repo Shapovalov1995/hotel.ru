@@ -48,6 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 });
 
+
+
 // Scroll по меню ******************************************************
 
 $(document).ready(function () {
