@@ -150,7 +150,11 @@ body {
   font-family: "Muller", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f1f1f1;
   cursor: default;
-  word-break: break-all;
+
+}
+
+.word-break {
+  word-break: break-word;
 }
 
 /* .word-break_word {
@@ -682,7 +686,7 @@ input:focus-visible {
 }
 
 .offers {
-  padding-bottom: 71px;
+  padding-bottom: 40px;
 }
 
 .offers-title {
@@ -841,7 +845,7 @@ input:focus-visible {
 /* about us start *********************************************************/
 
 .about-us {
-  padding-bottom: 70px;
+  padding-bottom: 40px;
 }
 
 .about-us-title {
@@ -857,19 +861,20 @@ input:focus-visible {
   line-height: 200%;
   text-align: left;
   color: #000000;
+  word-break: normal;
 }
 
 /* about us end *********************************************************/
 
 .section-title {
-  /* padding-top: 30px; */
-  /* margin-bottom: 19px; */
+  padding-top: 30px;
+  margin-bottom: 20px;
 }
 
 /* services start *********************************************************/
 
 .services {
-  padding-bottom: 71px;
+  padding-bottom: 40px;
 }
 
 .services-title {
@@ -924,6 +929,7 @@ input:focus-visible {
   font-family: "Muller";
   font-style: normal;
   font-weight: 400;
+  word-break: normal;
 
   font-size: 16px;
   line-height: 200%;
@@ -966,7 +972,7 @@ input:focus-visible {
 /* advantages start *********************************************************/
 
 .advantages {
-  padding-bottom: 71px;
+  padding-bottom: 40px;
 }
 
 .advantages-title {
@@ -1014,7 +1020,7 @@ input:focus-visible {
 /* location start *********************************************************/
 
 .location {
-  padding-bottom: 70px;
+  padding-bottom: 40px;
 }
 
 .location-title {
@@ -1234,17 +1240,20 @@ input:focus-visible {
 /* search-tour start *********************************************************/
 
 .search-tour {
+  padding-top: 30px;
   padding-bottom: 40px;
 }
 
 .search-tour-title {
+  padding-top: 45px;
   padding-left: 40px;
+
 }
 
 .search-tour-background {
   background: #e9e9e9;
   border-radius: 16px;
-  padding-bottom: 60px;
+  padding-bottom: 45px;
 }
 
 .search-tour-bar {
@@ -1256,7 +1265,6 @@ input:focus-visible {
 
 .form-search-tour-bar {
   display: flex;
-  /* margin-left: -70px; */
   align-items: center;
   justify-content: space-between;
 
@@ -1284,12 +1292,22 @@ select {
   outline: none;
   padding-right: 22px;
 
+
 }
+
+
 
 .country {
   padding-right: 48px;
 }
 
+select:focus-visible {
+  outline: 1px solid #F1F1F1;
+}
+
+input:focus-visible {
+  outline: 1px solid #F1F1F1;
+}
 
 input[type="date"] {
   letter-spacing: -1px;
@@ -1300,7 +1318,7 @@ input[type="date"] {
 input[type="number"] {
 
   width: 123px;
-  border-bottom: 1px solid #E9E9E9;
+  border-bottom: 1px solid #F1F1F1;
 
 }
 
@@ -1323,142 +1341,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 
-.btn-form-search-tour-bar-buttom {
-  /* margin-left: auto; */
-}
-
-
-
-.select-list {
-  /* color: #333333; */
-}
-
-
-/* .search-tour-background-bar-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.search-tour-title {
-  padding-top: 46px;
-  padding-left: 40px;
-}
-
-.search-tour-background-bar {
-  background-color: white;
-  border-radius: 16px;
-  display: inline-flex;
-}
-
-label {
-  margin-bottom: 12px;
-}
-
-
-
-.form-search-tour-bar-list {
-  display: flex;
-  align-items: center;
-  margin-left: 24px;
-}
-
-.form-search-tour-bar-list-input:not(:last-child) {
-  margin-right: 33px;
-}
-
-.form-search-tour-bar-list-input {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.form-search-tour-bar-list-input-date-margin {
-  margin-left: 5px;
-}
-
-.form-search-tour-bar-list-input-number_1-margin {
-  margin-left: 6px;
-}
-
-.form-search-tour-bar-list-input-number_2-margin {
-  margin-left: 8px;
-}
-
-.date_1-title_text {
-  font-family: "Muller";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
-  color: #000000;
-}
-
-.number_1-title_text,
-.number_2-title_text {
-  font-family: "Muller";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
-  color: #000000;
-}
-
-.form-search-tour-bar-list-input-city-tilte_text,
-.form-search-tour-bar-list-input-country-tilte_text {
-  padding-left: 4px;
-
-  font-family: "Muller";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
-  color: #000000;
-}
-
-input[type="date"] {
-  letter-spacing: -1px;
-  width: 123px;
-  color: #000000;
-  cursor: text;
-}
-
-
-
-.country_1 {
-  padding-right: 49px;
-}
-
-.number-spin-button_1::-webkit-inner-spin-button,
-.number-spin-button_2::-webkit-inner-spin-button {
-  opacity: 1;
-}
-
-.number-spin-button_1 {
-  background: transparent;
-  border-bottom: 1px solid #e9e9e9;
-  width: 121px;
-}
-
-.number-spin-button_2 {
-  background: transparent;
-  border-bottom: 1px solid #e9e9e9;
-  width: 121px;
-}
-
-.btn-form-search-tour-bar-buttom {
-  font-family: "Muller";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-
-  color: #cc9933;
-  border: 1px solid #cc9933;
-  border-radius: 10px;
-  padding: 11px 30px;
-
-  
-} */
 
 /* search-tour end *********************************************************/
 /* contacts start *********************************************************/
