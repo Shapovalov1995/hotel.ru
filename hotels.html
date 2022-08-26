@@ -86,18 +86,15 @@
 
           </ul>
         </nav>
+
         <div class="button-header-navigation">
 
-          <a tabindex="1" href="#search-tour" class="button-header-navigation-link">
-            <button class="reset-btn btn btn-navigation">
-              Хочу тур
-            </button>
+          <a class="reset-btn btn btn-navigation" href="#search-tour" class="button-header-navigation-link">
+            Хочу тур
           </a>
 
-          <a tabindex="1" href="#search-tour">
-            <button class="reset-btn btn btn-navigation">
-              Обратный звонок
-            </button>
+          <a class="reset-btn btn btn-navigation" href="#search-tour" class="button-header-navigation-link">
+            Обратный звонок
           </a>
 
         </div>
@@ -1416,8 +1413,98 @@
             Хочу тур
           </h2>
 
+          <div class="search-tour-bar">
 
-          <div class="search-tour-background-bar-flex">
+            <form action="https://jsonplaceholder.typicode.com/posts" class="form-search-tour-bar" method="POST">
+
+
+
+              <div class="form-search-tour-bar-division">
+                <label for="city-1" class="form-search-tour-bar-division-title">
+                  <span>
+                    Город вылета
+                  </span>
+                </label>
+                <select name="city" id="city-1" class="city" required>
+                  <option value="" class="city-select-list">-- Выбрать --</option>
+                  <option selected value="Санкт-Петербург">Санкт-Петербург</option>
+                  <option value="Саранск">Саранск</option>
+                  <option value="Севастополь">Севастополь</option>
+                  <option value="Северодвинск">Северодвинск</option>
+                  <option value="Симферополь">Симферополь</option>
+                  <option value="Сочи">Сочи</option>
+                  <option value="Ставрополь">Ставрополь</option>
+                  <option value="Сызрань">Сызрань</option>
+                  <option value="Сыктывкар">Сыктывкар</option>
+                </select>
+              </div>
+
+              <div class="form-search-tour-bar-division">
+                <label for="country-1" class="form-search-tour-bar-division-title">
+                  <span>
+                    Старна
+                  </span>
+                </label>
+                <select name="country" id="country-1" class="country" required>
+                  <option value="" class="city-select-list">-- Выбрать --</option>
+                  <option selected value="Санкт-Петербург">Австралия</option>
+                  <option value="Саранск">Австрия</option>
+                  <option value="Севастополь">Азербайджан</option>
+                  <option value="Северодвинск">Албания</option>
+                  <option value="Симферополь">Англия</option>
+                  <option value="Сочи">Аргентина</option>
+                  <option value="Ставрополь">Армения</option>
+                  <option value="Сызрань">Белоруссия</option>
+                  <option value="Сыктывкар">Бельгия</option>
+                </select>
+              </div>
+
+              <div class="form-search-tour-bar-division">
+                <label for="country-1" class="form-search-tour-bar-division-title">
+                  <span>
+                    Старна
+                  </span>
+
+                </label>
+                <input type="date" name="date" id="date-1" required>
+              </div>
+
+              <div class="form-search-tour-bar-division">
+
+                <label for="number-1" class="form-search-tour-bar-division-title">
+                  <span>
+                    Ночей
+                  </span>
+                </label>
+                <input class="number-spin-button_1" type="number" name="nights" min="1" max="31" id="number-1" required>
+
+              </div>
+
+              <div class="form-search-tour-bar-division">
+
+                <label for="number-2" class="form-search-tour-bar-division-title">
+                  <span>
+                    Туристы
+                  </span>
+                </label>
+                <input class="number-spin-button_1" type="number" name="tourist" min="1" max="31" id="number-2" required>
+
+
+              </div>
+
+
+              <button class="reset-btn btn btn-form-search-tour-bar-buttom">
+                Найти
+              </button>
+
+
+            </form>
+          </div>
+
+
+
+
+          <!-- <div class="search-tour-background-bar-flex">
 
             <div class="search-tour-background-bar">
 
@@ -1426,46 +1513,6 @@
 
                 <ul class="reset-list form-search-tour-bar-list">
 
-                  <li class="form-search-tour-bar-list-input">
-                    <label for="city_1">
-                      <span class="form-search-tour-bar-list-input-city-tilte_text">
-                        Город вылета
-                      </span>
-                    </label>
-                    <select name="city" id="city_1" class="city" required>
-
-                      <option value="" class="select-list">-- Выбрать --</option>
-                      <option selected value="Санкт-Петербург">Санкт-Петербург</option>
-                      <option value="Саранск">Саранск</option>
-                      <option value="Севастополь">Севастополь</option>
-                      <option value="Северодвинск">Северодвинск</option>
-                      <option value="Симферополь">Симферополь</option>
-                      <option value="Сочи">Сочи</option>
-                      <option value="Ставрополь">Ставрополь</option>
-                      <option value="Сызрань">Сызрань</option>
-                      <option value="Сыктывкар">Сыктывкар</option>
-                    </select>
-                  </li>
-
-                  <li class="form-search-tour-bar-list-input">
-                    <label for="country_1">
-                      <span class="form-search-tour-bar-list-input-country-tilte_text">
-                        Страна
-                      </span>
-                    </label>
-                    <select name="country" id="country_1" class="country_1" required>
-                      <option value="" class="select-list">-- Выбрать --</option>
-                      <option selected value="Австралия">Австралия</option>
-                      <option value="Австрия">Австрия</option>
-                      <option value="Азербайджан">Азербайджан</option>
-                      <option value="Албания">Албания</option>
-                      <option value="Англия">Англия</option>
-                      <option value="Аргентина">Аргентина</option>
-                      <option value="Армения">Армения</option>
-                      <option value="Белоруссия">Белоруссия</option>
-                      <option value="Бельгия">Бельгия</option>
-                    </select>
-                  </li>
 
 
                   <li class="form-search-tour-bar-list-input form-search-tour-bar-list-input-date-margin">
@@ -1514,7 +1561,7 @@
 
             </div>
 
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -1607,13 +1654,12 @@
             </ul>
 
 
-            <a tabindex="1"
+            <a class="reset-btn btn btn-contacts-address-buttom"
               href="https://yandex.ru/maps/213/moscow/?ll=37.813549%2C55.728256&mode=routes&rtext=~55.728256%2C37.813549&rtt=comparison&ruri=~ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjY5MjM4MhI50KDQvtGB0YHQuNGPLCDQnNC%2B0YHQutCy0LAsINGD0LvQuNGG0LAg0K7QvdC%2B0YHRgtC4LCA10YE0IgoNFEEXQhW76V5C&z=16.4"
               target="_blank">
-              <button class="reset-btn btn btn-contacts-address-buttom">
-                Построить маршрут
-              </button>
+              Построить маршрут
             </a>
+
 
           </address>
 
