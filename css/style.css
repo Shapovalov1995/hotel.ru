@@ -862,8 +862,8 @@ input:focus-visible {
 /* about us end *********************************************************/
 
 .section-title {
-  padding-top: 30px;
-  margin-bottom: 19px;
+  /* padding-top: 30px; */
+  /* margin-bottom: 19px; */
 }
 
 /* services start *********************************************************/
@@ -1244,12 +1244,12 @@ input:focus-visible {
 .search-tour-background {
   background: #e9e9e9;
   border-radius: 16px;
-  padding-bottom: 140px;
+  padding-bottom: 60px;
 }
 
 .search-tour-bar {
   background-color: white;
-  padding: 53px;
+  padding: 28px;
   margin: 0 45px 0 45px;
   border-radius: 16px;
 }
@@ -1259,6 +1259,7 @@ input:focus-visible {
   /* margin-left: -70px; */
   align-items: center;
   justify-content: space-between;
+
 }
 
 .form-search-tour-bar-division {
@@ -1269,17 +1270,57 @@ input:focus-visible {
 
 .form-search-tour-bar-division-title {
   padding-bottom: 16px;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
 
 }
 
 select {
-  cursor: pointer;
+
   border: 0px;
   outline: none;
   padding-right: 22px;
+
+}
+
+.country {
+  padding-right: 48px;
 }
 
 
+input[type="date"] {
+  letter-spacing: -1px;
+  width: 123px;
+
+}
+
+input[type="number"] {
+
+  width: 123px;
+  border-bottom: 1px solid #E9E9E9;
+
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
+.btn-form-search-tour-bar-buttom {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+
+  color: #cc9933;
+  border: 1px solid #cc9933;
+  border-radius: 10px;
+  padding: 11px 30px;
+
+
+}
 
 
 .btn-form-search-tour-bar-buttom {
@@ -1416,8 +1457,7 @@ input[type="date"] {
   border-radius: 10px;
   padding: 11px 30px;
 
-  margin-left: 51px;
-  margin-right: 27px;
+  
 } */
 
 /* search-tour end *********************************************************/
