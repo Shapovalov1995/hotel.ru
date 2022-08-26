@@ -1301,6 +1301,7 @@ select {
   border: 0px;
   outline: none;
   padding-right: 22px;
+  cursor: pointer;
 
 }
 
@@ -1319,6 +1320,7 @@ input:focus-visible {
 input[type="date"] {
   letter-spacing: -1px;
   width: 123px;
+  cursor: text;
 
 }
 
