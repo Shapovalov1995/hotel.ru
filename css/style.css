@@ -219,7 +219,9 @@ img {
 
 #toTop {
   position: fixed;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   bottom: 30px;
   right: -40px;
   width: 40px;
