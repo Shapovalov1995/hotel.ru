@@ -1121,27 +1121,59 @@ input {
 }
 
 .decor-location-list-card-9 {
-  padding: 0;
+
   background-image: url(../img/Размещение_9.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
 
-.location-list-card-detailed_link {
-  display: flex;
-  align-items: center;
-  margin-bottom: 26px;
-
-  font-family: "Muller";
+  font-family: 'Muller';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
+
   color: var(--color-white-light);
+
+
 }
+
+
+.decor-location-list-card-9:focus-visible {
+  outline: 1px solid var(--color-orange-medium);
+  outline-offset: 4px;
+  border-radius: 0%;
+
+}
+
+.decor-location-list-card-9-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 27px;
+  stroke: var(--color-white-light);
+}
+
+.decor-location-list-card-9:hover .decor-location-list-card-9-text {
+
+  color: var(--color-orange-light);
+  stroke: var(--color-orange-light);
+  transition: all 0.3s ease-in-out;
+
+}
+
+.decor-location-list-card-9:active .decor-location-list-card-9-text {
+
+  color: var(--color-orange-medium);
+  stroke: var(--color-orange-medium);
+
+}
+
+
+
+
 
 .svg-location-list-card-detailed_link {
   margin-left: 8px;
