@@ -653,7 +653,7 @@ input {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: var(--header-link-color);
+  color: var(--color-dark-regular);
 
 }
 
