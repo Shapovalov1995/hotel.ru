@@ -1,0 +1,14 @@
+{
+    "name": "Lagoona",
+    "short_name": "Lagoona",
+    "icons": [
+        {
+            "src": "/android-chrome-48x48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#0d0074",
+    "background_color": "#0d0074",
+    "display": "standalone"
+}
