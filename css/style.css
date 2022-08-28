@@ -150,7 +150,6 @@ body {
   font-family: "Muller", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--color-white-regular);
   cursor: default;
-
 }
 
 .word-break {
@@ -266,12 +265,10 @@ img {
 
 /* UI-KIT ********************************************************/
 :root {
-
   /* Color style ***/
   --color-white-light: #ffffff;
-  --color-white-regular: #F1F1F1;
-  --color-white-medium: #E9E9E9;
-
+  --color-white-regular: #f1f1f1;
+  --color-white-medium: #e9e9e9;
 
   --color-dark-light: #999999;
   --color-dark-regular: #666666;
@@ -279,10 +276,9 @@ img {
   --color-dark-bold: #000000;
 
   --color-orange-light: #ffcc66;
-  --color-orange-regular: #F0BF5F;
-  --color-orange-medium: #CC9933;
-  --color-orange-bold: #A47312;
-
+  --color-orange-regular: #f0bf5f;
+  --color-orange-medium: #cc9933;
+  --color-orange-bold: #a47312;
 }
 
 /* hover start ********************************************************/
@@ -399,8 +395,6 @@ img {
   stroke: var(--color-orange-light);
 }
 
-
-
 /*contacts-address-list-item-tel_link***/
 
 .contacts-address-list-item-tel_link-1:focus-visible,
@@ -411,9 +405,9 @@ img {
   color: var(--color-orange-light);
 }
 
-.decor-footer-social-list-item-tripadvisor:focus-visible>svg>path,
-.decor-footer-social-list-item-ok:focus-visible>svg>path,
-.decor-footer-social-list-item-vk:focus-visible>svg>path {
+.decor-footer-social-list-item-tripadvisor:focus-visible > svg > path,
+.decor-footer-social-list-item-ok:focus-visible > svg > path,
+.decor-footer-social-list-item-vk:focus-visible > svg > path {
   fill: var(--color-orange-medium);
 }
 
@@ -438,19 +432,17 @@ input {
   border: none;
 }
 
-
-
 /* focus-visible end*******************************************************/
 
 .header-top-login_account-link:hover,
-.header-top-login_account-link:hover>svg>path {
+.header-top-login_account-link:hover > svg > path {
   color: var(--color-orange-light);
   fill: var(--color-orange-light);
   transition: all 0.3s ease-in-out;
 }
 
 .header-top-login_account-link:active,
-.header-top-login_account-link:active>svg>path {
+.header-top-login_account-link:active > svg > path {
   color: var(--color-orange-bold);
   fill: var(--color-orange-bold);
 }
@@ -558,17 +550,17 @@ input {
   color: var(--color-orange-bold);
 }
 
-.svg-footer-social-list-item-tripadvisor:hover>path,
-.svg-footer-social-list-item-ok:hover>path,
-.svg-footer-social-list-item-vk:hover>path {
+.svg-footer-social-list-item-tripadvisor:hover > path,
+.svg-footer-social-list-item-ok:hover > path,
+.svg-footer-social-list-item-vk:hover > path {
   transition: all 0.3s ease-in-out;
   fill: var(--color-orange-medium);
   transition: all 0.3s ease-in-out;
 }
 
-.svg-footer-social-list-item-tripadvisor:active>path,
-.svg-footer-social-list-item-ok:active>path,
-.svg-footer-social-list-item-vk:active>path {
+.svg-footer-social-list-item-tripadvisor:active > path,
+.svg-footer-social-list-item-ok:active > path,
+.svg-footer-social-list-item-vk:active > path {
   fill: var(--color-orange-bold);
 }
 
@@ -654,7 +646,6 @@ input {
   font-size: 16px;
   line-height: 16px;
   color: var(--color-dark-regular);
-
 }
 
 /* Button navigation start *********************************************************/
@@ -745,9 +736,11 @@ input {
 /* Блоки баннеров Decoration start ********************************************************/
 
 .decor-offers-list-banner-1 {
-  background: linear-gradient(90deg,
+  background: linear-gradient(
+      90deg,
       rgba(48, 64, 89, 0.84) -2.9%,
-      rgba(53, 65, 83, 0) 65.7%),
+      rgba(53, 65, 83, 0) 65.7%
+    ),
     url(../img/Остров_Мальдивы.jpg);
 
   background-repeat: no-repeat;
@@ -755,9 +748,11 @@ input {
 }
 
 .decor-offers-list-banner-2 {
-  background: linear-gradient(90deg,
+  background: linear-gradient(
+      90deg,
       rgba(48, 64, 89, 0.84) -2.9%,
-      rgba(53, 65, 83, 0) 65.7%),
+      rgba(53, 65, 83, 0) 65.7%
+    ),
     url(../img/Остров_Крит.jpg);
 
   background-repeat: no-repeat;
@@ -1120,6 +1115,7 @@ input {
 }
 
 .decor-location-list-card-9 {
+  position: relative;
 
   background-image: url(../img/Размещение_9.jpg);
   background-repeat: no-repeat;
@@ -1129,23 +1125,28 @@ input {
   justify-content: flex-end;
   align-items: center;
 
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
 
   color: var(--color-white-light);
-
-
 }
 
+.location-list-card__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .decor-location-list-card-9:focus-visible {
   outline: 1px solid var(--color-orange-medium);
   outline-offset: 4px;
   border-radius: 0%;
-
 }
 
 .decor-location-list-card-9-text {
@@ -1156,23 +1157,15 @@ input {
 }
 
 .decor-location-list-card-9:hover .decor-location-list-card-9-text {
-
   color: var(--color-orange-light);
   stroke: var(--color-orange-light);
   transition: all 0.3s ease-in-out;
-
 }
 
 .decor-location-list-card-9:active .decor-location-list-card-9-text {
-
   color: var(--color-orange-medium);
   stroke: var(--color-orange-medium);
-
 }
-
-
-
-
 
 .svg-location-list-card-detailed_link {
   margin-left: 8px;
@@ -1288,7 +1281,6 @@ input {
 .search-tour-title {
   padding-top: 45px;
   padding-left: 40px;
-
 }
 
 .search-tour-background {
@@ -1308,23 +1300,20 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .form-search-tour-bar-division {
   display: flex;
   flex-direction: column;
-
 }
 
 .form-search-tour-bar-division-title {
   padding-bottom: 16px;
-  font-family: 'Muller';
+  font-family: "Muller";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
-
 }
 
 .label-title {
@@ -1336,12 +1325,10 @@ input {
 }
 
 select {
-
   border: 0px;
   outline: none;
   padding-right: 22px;
   cursor: pointer;
-
 }
 
 .country {
@@ -1360,14 +1347,11 @@ input[type="date"] {
   letter-spacing: -1px;
   width: 123px;
   cursor: text;
-
 }
 
 input[type="number"] {
-
   width: 123px;
   border-bottom: 1px solid var(--color-white-medium);
-
 }
 
 input[type="number"]::-webkit-inner-spin-button {
@@ -1384,11 +1368,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border: 1px solid var(--color-orange-medium);
   border-radius: 10px;
   padding: 11px 30px;
-
-
 }
-
-
 
 /* search-tour end *********************************************************/
 /* contacts start *********************************************************/
@@ -1401,7 +1381,6 @@ address {
 }
 
 .contacts {
-
   padding-bottom: 40px;
 }
 
