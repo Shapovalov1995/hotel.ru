@@ -411,7 +411,7 @@ img {
   color: var(--color-orange-light);
 }
 
-.decor-footer-social-list-item-lagoona:focus-visible>svg>path,
+.decor-footer-social-list-item-tripadvisor:focus-visible>svg>path,
 .decor-footer-social-list-item-ok:focus-visible>svg>path,
 .decor-footer-social-list-item-vk:focus-visible>svg>path {
   fill: var(--color-orange-medium);
@@ -558,7 +558,7 @@ input {
   color: var(--color-orange-bold);
 }
 
-.svg-footer-social-list-item-lagoona:hover>path,
+.svg-footer-social-list-item-tripadvisor:hover>path,
 .svg-footer-social-list-item-ok:hover>path,
 .svg-footer-social-list-item-vk:hover>path {
   transition: all 0.3s ease-in-out;
@@ -566,7 +566,7 @@ input {
   transition: all 0.3s ease-in-out;
 }
 
-.svg-footer-social-list-item-lagoona:active>path,
+.svg-footer-social-list-item-tripadvisor:active>path,
 .svg-footer-social-list-item-ok:active>path,
 .svg-footer-social-list-item-vk:active>path {
   fill: var(--color-orange-bold);
