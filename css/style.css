@@ -366,26 +366,19 @@ img {
   outline-offset: 10px;
 }
 
-/*offers-list-banner***/
-
-.offers-list-banner:focus-visible {
-  outline: 1px solid var(--color-orange-medium);
-  outline-offset: 4px;
-  border-radius: 0%;
-}
-
-.offers-list-banner-luxe:focus-visible {
-  outline: 1px solid var(--color-orange-medium);
-  outline-offset: 4px;
-  border-radius: 0%;
-}
-
 /*services-list-item***/
 
-.services-list-item:focus-visible {
+.services-list-item-title_link:focus-visible::before {
   outline: 1px solid var(--color-orange-medium);
   outline-offset: 4px;
   border-radius: 0%;
+
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*location-list-card***/
@@ -466,44 +459,70 @@ input {
 
 /*********************************************************/
 
-.offers-list-banner-block_text-detailed_link {
+.offers-list-banner-detailed_link:focus-visible::before {
+  outline: 1px solid var(--color-orange-medium);
+  outline-offset: 4px;
+  border-radius: 0%;
+
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.offers-list-banner-detailed_link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.offers-list-banner-detailed_link {
   stroke: var(--color-orange-light);
 }
 
-.offers-list-banner:hover .offers-list-banner-block_text-detailed_link {
+.offers-list-banner-detailed_link:hover {
   color: var(--color-white-light);
   stroke: var(--color-white-light);
   transition: all 0.3s ease-in-out;
 }
 
-.offers-list-banner:active .offers-list-banner-block_text-detailed_link {
+.offers-list-banner-detailed_link:active {
   color: var(--color-orange-bold);
   stroke: var(--color-orange-bold);
 }
 
-.offers-list-banner-luxe:hover .offers-list-banner-block_text-detailed_link {
-  color: var(--color-white-light);
-  stroke: var(--color-white-light);
-  transition: all 0.3s ease-in-out;
-}
-
-.offers-list-banner-luxe:active .offers-list-banner-block_text-detailed_link {
+.offers-list-banner-detailed_link:active {
   color: var(--color-orange-bold);
   stroke: var(--color-orange-bold);
 }
 
 /*********************************************************/
+
+.services-list-item-title_link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .services-list-item-title_link {
   stroke: var(--color-orange-medium);
 }
 
-.services-list-item:hover .services-list-item-title_link {
+.services-list-item-title_link:hover {
   color: var(--color-orange-light);
   stroke: var(--color-orange-light);
   transition: all 0.3s ease-in-out;
 }
 
-.services-list-item:active .services-list-item-title_link {
+.services-list-item-title_link:active {
   color: var(--color-orange-bold);
   stroke: var(--color-orange-bold);
 }
@@ -709,6 +728,7 @@ input {
 }
 
 .offers-list-banner {
+  position: relative;
   width: 573px;
   min-height: 258px;
   border-radius: 16px;
@@ -720,6 +740,7 @@ input {
 }
 
 .offers-list-banner-luxe {
+  position: relative;
   width: 573px;
   min-height: 100%;
   border-radius: 16px;
@@ -771,7 +792,7 @@ input {
 
 /* style text lite ********************************************************/
 
-.offers-list-banner-block_text-title {
+.offers-list-banner-title {
   padding-top: 41px;
   font-family: "Muller";
   font-style: normal;
@@ -782,7 +803,7 @@ input {
   margin-bottom: 14px;
 }
 
-.offers-list-banner-block_text-price {
+.offers-list-banner-price {
   display: block;
   padding-top: 1px;
   margin-bottom: auto;
@@ -796,7 +817,7 @@ input {
   opacity: 0.8;
 }
 
-.offers-list-banner-block_text-detailed_link {
+.offers-list-banner-detailed_link {
   display: flex;
   align-items: center;
   margin-bottom: 39px;
@@ -816,7 +837,7 @@ input {
 
 /* style text luxe ********************************************************/
 
-.offers-list-banner-luxe-block_text-title {
+.offers-list-banner-luxe-title {
   /* padding-top: 213px; */
 
   font-family: "Muller";
@@ -828,7 +849,7 @@ input {
   margin-bottom: 14px;
 }
 
-.offers-list-banner-luxe-block_text-price {
+.offers-list-banner-luxe-price {
   margin-bottom: 45px;
   font-family: unset;
   font-style: normal;
@@ -839,7 +860,7 @@ input {
   opacity: 0.8;
 }
 
-.offers-list-banner-luxe-block_text-link {
+.offers-list-banner-luxe-link {
   margin-bottom: 40px;
 }
 
@@ -894,13 +915,11 @@ input {
 .services-list-item {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   width: 573px;
-
   border-radius: 16px;
-
   background-color: var(--color-white-light);
-
   padding: 192px 0 34px 45px;
 }
 
@@ -1143,8 +1162,6 @@ input {
   height: 100%;
 }
 
-
-
 .location-list-card__link:focus-visible::before {
   outline: 1px solid var(--color-orange-medium);
   outline-offset: 4px;
@@ -1175,8 +1192,6 @@ input {
   stroke: var(--color-orange-medium);
   transition: all 0.3s ease-in-out;
 }
-
-
 
 .svg-location-list-card-detailed_link {
   margin-left: 8px;
