@@ -1171,8 +1171,8 @@ input {
 }
 
 .location-list-card__link:active .decor-location-list-card-9-text {
-  color: var(--color-orange-bold);
-  stroke: var(--color-orange-bold);
+  color: var(--color-orange-medium);
+  stroke: var(--color-orange-medium);
   transition: all 0.3s ease-in-out;
 }
 
